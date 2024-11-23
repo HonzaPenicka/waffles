@@ -22,7 +22,7 @@ const geistMono = localFont({
 export default function Home() {
   return (
     <div className="flex flex-col h-auto w-screen justify-between">
-      <header className="h-8 lg:h-16 w-full top-0 grid bg-[#afb8df]"></header>
+      <header className="h-8 lg:h-16 w-full top-0 grid bg-[#D7C2D7]"></header>
 
       <main className="gap-8 container mx-auto border-4 rounded-3xl h-full w-full">
         <div className="p-4 grid gap-8 items-center">
@@ -40,22 +40,22 @@ export default function Home() {
               >
                 <div>
                   <SwiperSlide>
-                    <button className="rounded-full px-12 py-2 flex font-semibold justify-center text-[#afb8df] active:bg-[#afb8df] focus:bg-[#afb8df] active:text-white focus:text-white">
+                    <button className="rounded-full px-12 py-2 flex font-semibold justify-center text-[#9F7EA9] active:bg-[#D7C2D7] focus:bg-[#D7C2D7] active:text-white focus:text-white">
                       Prdel
                     </button>
                   </SwiperSlide>
                   <SwiperSlide className="items-center">
-                    <button className="rounded-full px-12 py-2 flex font-semibold justify-center text-[#afb8df] active:bg-[#afb8df] focus:bg-[#afb8df] active:text-white focus:text-white">
+                    <button className="rounded-full px-12 py-2 flex font-semibold justify-center text-[#9F7EA9] active:bg-[#D7C2D7] focus:bg-[#D7C2D7] active:text-white focus:text-white">
                       Kunda
                     </button>
                   </SwiperSlide>
                   <SwiperSlide>
-                    <button className="rounded-full px-12 py-2 flex font-semibold justify-center text-[#afb8df] active:bg-[#afb8df] focus:bg-[#afb8df] active:text-white focus:text-white">
+                    <button className="rounded-full px-12 py-2 flex font-semibold justify-center text-[#9F7EA9] active:bg-[#D7C2D7] focus:bg-[#D7C2D7] active:text-white focus:text-white">
                       Věnec
                     </button>
                   </SwiperSlide>
                   <SwiperSlide>
-                    <button className="rounded-full px-12 py-2 flex font-semibold justify-center text-[#afb8df] active:bg-[#afb8df] focus:bg-[#afb8df] active:text-white focus:text-white">
+                    <button className="rounded-full px-12 py-2 flex font-semibold justify-center text-[#9F7EA9] active:bg-[#D7C2D7] focus:bg-[#D7C2D7] active:text-white focus:text-white">
                       Cecka
                     </button>
                   </SwiperSlide>
@@ -65,7 +65,7 @@ export default function Home() {
           </div>
 
           <div className="grid gap-8">
-            <div className="text-5xl text-center font-semibold text-[#4D5BB8]">
+            <div className="text-5xl text-center font-semibold text-[#9F7EA9]">
               Delight Your <br />
               Senses
             </div>
@@ -73,15 +73,15 @@ export default function Home() {
             <div
               className="aspect-square rounded-3xl"
               style={{
-                backgroundImage: 'url("/pics/head/mobile.png")',
+                backgroundImage: 'url("/pics/products/pink-blue.png")',
                 backgroundRepeat: "no-repeat",
                 backgroundSize: "cover",
-                backgroundPosition: "center",
+                backgroundPositionY: "70%",
               }}
             ></div>
 
-            <div className="aspect-square bg-[#afb8df]">
-              <div className="p-4 bg-[#EEEDA2] h-full w-full border-[#afb8df] rounded-3xl"></div>
+            <div className="aspect-square bg-[#D7C2D7]">
+              <div className="p-4 bg-[#EEEDA2] h-full w-full border-[#D7C2D7] rounded-3xl"></div>
             </div>
             <Swiper
               modules={[Navigation, Pagination, Scrollbar, A11y]}
@@ -104,19 +104,20 @@ export default function Home() {
                         <div
                           className="rounded-full border aspect-square h-44"
                           style={{
-                            backgroundImage: 'url("/pics/head/mobile.png")',
+                            backgroundImage:
+                              'url("/pics/products/pink-blue.png")',
                             backgroundRepeat: "no-repeat",
                             backgroundSize: "cover",
-                            backgroundPosition: "center",
+                            backgroundPositionY: "70%",
                           }}
                         ></div>
                       </div>
 
                       <div className="m-4 flex justify-end">
-                        <button className="p-0.5 pl-4 text-sm gap-2 border border-[#afb8df] rounded-3xl items-center flex">
+                        <button className="p-0.5 pl-4 text-sm gap-2 border border-[#D7C2D7] rounded-3xl items-center flex">
                           <div>Discover more</div>
 
-                          <div className="rounded-full border border-[#afb8df] p-2 bg-[#afb8df]">
+                          <div className="rounded-full border border-[#D7C2D7] p-2 bg-[#D7C2D7]">
                             <ArrowIcon />
                           </div>
                         </button>
@@ -147,10 +148,10 @@ export default function Home() {
                       </div>
 
                       <div className="m-4 flex justify-end">
-                        <button className="p-0.5 pl-4 text-sm gap-2 border border-[#afb8df] rounded-3xl items-center flex">
+                        <button className="p-0.5 pl-4 text-sm gap-2 border border-[#D7C2D7] rounded-3xl items-center flex">
                           <div>Discover more</div>
 
-                          <div className="rounded-full border border-[#afb8df] p-2 bg-[#afb8df]">
+                          <div className="rounded-full border border-[#D7C2D7] p-2 bg-[#D7C2D7]">
                             <ArrowIcon />
                           </div>
                         </button>
@@ -181,10 +182,10 @@ export default function Home() {
                       </div>
 
                       <div className="m-4 flex justify-end">
-                        <button className="p-0.5 pl-4 text-sm gap-2 border border-[#afb8df] rounded-3xl items-center flex">
+                        <button className="p-0.5 pl-4 text-sm gap-2 border border-[#D7C2D7] rounded-3xl items-center flex">
                           <div>Discover more</div>
 
-                          <div className="rounded-full border border-[#afb8df] p-2 bg-[#afb8df]">
+                          <div className="rounded-full border border-[#D7C2D7] p-2 bg-[#D7C2D7]">
                             <ArrowIcon />
                           </div>
                         </button>
@@ -215,10 +216,10 @@ export default function Home() {
                       </div>
 
                       <div className="m-4 flex justify-end">
-                        <button className="p-0.5 pl-4 text-sm gap-2 border border-[#afb8df] rounded-3xl items-center flex">
+                        <button className="p-0.5 pl-4 text-sm gap-2 border border-[#D7C2D7] rounded-3xl items-center flex">
                           <div>Discover more</div>
 
-                          <div className="rounded-full border border-[#afb8df] p-2 bg-[#afb8df]">
+                          <div className="rounded-full border border-[#D7C2D7] p-2 bg-[#D7C2D7]">
                             <ArrowIcon />
                           </div>
                         </button>
@@ -232,7 +233,7 @@ export default function Home() {
         </div>
       </main>
 
-      <footer className="h-8 lg:h-16 w-full top-0 grid bg-[#afb8df]"></footer>
+      <footer className="h-8 lg:h-16 w-full top-0 grid bg-[#D7C2D7]"></footer>
     </div>
   );
 }
