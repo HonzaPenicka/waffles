@@ -1,10 +1,12 @@
 import localFont from "next/font/local";
-import { WaffleIcon } from "../../public/icon/waffle";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { WaffleIcon } from "../../public/icon/waffle";
+import { ArrowIcon } from "../../public/icon/arrow";
+import { Navigation, Pagination, Scrollbar, A11y } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
+import "swiper/css/scrollbar";
 import "swiper/css/navigation";
-import { ArrowIcon } from "../../public/icon/arrow";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -29,31 +31,31 @@ export default function Home() {
 
             <div className="col-span-2 justify-center">
               <Swiper
-                spaceBetween={2}
-                slidesPerView={2}
-                pagination
+                modules={[Navigation, Pagination, Scrollbar, A11y]}
+                spaceBetween={1}
+                slidesPerView={1.5}
                 onSlideChange={() => console.log("slide change")}
                 onSwiper={(swiper) => console.log(swiper)}
-                className="border rounded-full p-1 grid gap-2 items-center justify-center bg-white max-w-56"
+                className="border rounded-full p-1 grid gap-1 items-center justify-center bg-white max-w-56"
               >
                 <div>
                   <SwiperSlide>
-                    <button className="rounded-full px-8 py-2 flex font-semibold justify-center text-[#afb8df] active:bg-[#afb8df] focus:bg-[#afb8df] active:text-white focus:text-white">
+                    <button className="rounded-full px-12 py-2 flex font-semibold justify-center text-[#afb8df] active:bg-[#afb8df] focus:bg-[#afb8df] active:text-white focus:text-white">
                       Prdel
                     </button>
                   </SwiperSlide>
                   <SwiperSlide className="items-center">
-                    <button className="rounded-full px-8 py-2 flex font-semibold justify-center text-[#afb8df] active:bg-[#afb8df] focus:bg-[#afb8df] active:text-white focus:text-white">
+                    <button className="rounded-full px-12 py-2 flex font-semibold justify-center text-[#afb8df] active:bg-[#afb8df] focus:bg-[#afb8df] active:text-white focus:text-white">
                       Kunda
                     </button>
                   </SwiperSlide>
                   <SwiperSlide>
-                    <button className="rounded-full px-8 py-2 flex font-semibold justify-center text-[#afb8df] active:bg-[#afb8df] focus:bg-[#afb8df] active:text-white focus:text-white">
+                    <button className="rounded-full px-12 py-2 flex font-semibold justify-center text-[#afb8df] active:bg-[#afb8df] focus:bg-[#afb8df] active:text-white focus:text-white">
                       Věnec
                     </button>
                   </SwiperSlide>
                   <SwiperSlide>
-                    <button className="rounded-full px-8 py-2 flex font-semibold justify-center text-[#afb8df] active:bg-[#afb8df] focus:bg-[#afb8df] active:text-white focus:text-white">
+                    <button className="rounded-full px-12 py-2 flex font-semibold justify-center text-[#afb8df] active:bg-[#afb8df] focus:bg-[#afb8df] active:text-white focus:text-white">
                       Cecka
                     </button>
                   </SwiperSlide>
@@ -81,47 +83,151 @@ export default function Home() {
             <div className="aspect-square bg-[#afb8df]">
               <div className="p-4 bg-[#EEEDA2] h-full w-full border-[#afb8df] rounded-3xl"></div>
             </div>
-
-            <div className="bg-white aspect-square rounded-3xl text-[#4D5BB8]">
-              <Swiper
-                spaceBetween={0}
-                slidesPerView={1}
-                pagination={{ clickable: true }}
-                scrollbar={{ draggable: true }}
-              >
+            <Swiper
+              modules={[Navigation, Pagination, Scrollbar, A11y]}
+              spaceBetween={0}
+              slidesPerView={1}
+              navigation
+              className="w-full bg-white rounded-3xl"
+            >
+              <div className="aspect-square text-[#4D5BB8]">
                 <div className="grid">
                   <SwiperSlide>
-                    <div className="p-4 text-sm text-left flex flex-col">
-                      <div className="font-semibold">Full of chocolate</div>
+                    <div className="w-full">
+                      <div className="p-4 text-sm text-left flex flex-col">
+                        <div className="font-semibold">Full of chocolate</div>
 
-                      <div>creampie</div>
+                        <div>Creampie</div>
+                      </div>
+
+                      <div className="text-sm items-center justify-center grid">
+                        <div
+                          className="rounded-full border aspect-square h-44"
+                          style={{
+                            backgroundImage: 'url("/pics/head/mobile.png")',
+                            backgroundRepeat: "no-repeat",
+                            backgroundSize: "cover",
+                            backgroundPosition: "center",
+                          }}
+                        ></div>
+                      </div>
+
+                      <div className="m-4 flex justify-end">
+                        <button className="p-0.5 pl-4 text-sm gap-2 border border-[#afb8df] rounded-3xl items-center flex">
+                          <div>Discover more</div>
+
+                          <div className="rounded-full border border-[#afb8df] p-2 bg-[#afb8df]">
+                            <ArrowIcon />
+                          </div>
+                        </button>
+                      </div>
                     </div>
+                  </SwiperSlide>
 
-                    <div className="text-sm items-center justify-center grid">
-                      <div
-                        className="rounded-full border aspect-square h-44"
-                        style={{
-                          backgroundImage: 'url("/pics/head/mobile.png")',
-                          backgroundRepeat: "no-repeat",
-                          backgroundSize: "cover",
-                          backgroundPosition: "center",
-                        }}
-                      ></div>
-                    </div>
-
-                    <div className="m-4 flex justify-end">
-                      <button className="p-0.5 pl-4 text-sm gap-2 border border-[#afb8df] rounded-3xl items-center flex">
-                        <div>Discover more</div>
-
-                        <div className="rounded-full border border-[#afb8df] p-2 bg-[#afb8df]">
-                          <ArrowIcon />
+                  <SwiperSlide>
+                    <div className="w-full">
+                      <div className="p-4 text-sm text-left flex flex-col">
+                        <div className="font-semibold">
+                          Salty caramel with forest fruit
                         </div>
-                      </button>
+
+                        <div>Piss</div>
+                      </div>
+
+                      <div className="text-sm items-center justify-center grid">
+                        <div
+                          className="rounded-full border aspect-square h-44"
+                          style={{
+                            backgroundImage: 'url("/pics/head/mobile.png")',
+                            backgroundRepeat: "no-repeat",
+                            backgroundSize: "cover",
+                            backgroundPosition: "center",
+                          }}
+                        ></div>
+                      </div>
+
+                      <div className="m-4 flex justify-end">
+                        <button className="p-0.5 pl-4 text-sm gap-2 border border-[#afb8df] rounded-3xl items-center flex">
+                          <div>Discover more</div>
+
+                          <div className="rounded-full border border-[#afb8df] p-2 bg-[#afb8df]">
+                            <ArrowIcon />
+                          </div>
+                        </button>
+                      </div>
+                    </div>
+                  </SwiperSlide>
+
+                  <SwiperSlide>
+                    <div className="w-full">
+                      <div className="p-4 text-sm text-left flex flex-col">
+                        <div className="font-semibold">
+                          Nutella with strawberries
+                        </div>
+
+                        <div>Shits</div>
+                      </div>
+
+                      <div className="text-sm items-center justify-center grid">
+                        <div
+                          className="rounded-full border aspect-square h-44"
+                          style={{
+                            backgroundImage: 'url("/pics/head/mobile.png")',
+                            backgroundRepeat: "no-repeat",
+                            backgroundSize: "cover",
+                            backgroundPosition: "center",
+                          }}
+                        ></div>
+                      </div>
+
+                      <div className="m-4 flex justify-end">
+                        <button className="p-0.5 pl-4 text-sm gap-2 border border-[#afb8df] rounded-3xl items-center flex">
+                          <div>Discover more</div>
+
+                          <div className="rounded-full border border-[#afb8df] p-2 bg-[#afb8df]">
+                            <ArrowIcon />
+                          </div>
+                        </button>
+                      </div>
+                    </div>
+                  </SwiperSlide>
+
+                  <SwiperSlide>
+                    <div className="w-full">
+                      <div className="p-4 text-sm text-left flex flex-col">
+                        <div className="font-semibold">
+                          Raffaelo with animal sex
+                        </div>
+
+                        <div>Mature</div>
+                      </div>
+
+                      <div className="text-sm items-center justify-center grid">
+                        <div
+                          className="rounded-full border aspect-square h-44"
+                          style={{
+                            backgroundImage: 'url("/pics/head/mobile.png")',
+                            backgroundRepeat: "no-repeat",
+                            backgroundSize: "cover",
+                            backgroundPosition: "center",
+                          }}
+                        ></div>
+                      </div>
+
+                      <div className="m-4 flex justify-end">
+                        <button className="p-0.5 pl-4 text-sm gap-2 border border-[#afb8df] rounded-3xl items-center flex">
+                          <div>Discover more</div>
+
+                          <div className="rounded-full border border-[#afb8df] p-2 bg-[#afb8df]">
+                            <ArrowIcon />
+                          </div>
+                        </button>
+                      </div>
                     </div>
                   </SwiperSlide>
                 </div>
-              </Swiper>
-            </div>
+              </div>
+            </Swiper>
           </div>
         </div>
       </main>
