@@ -1,10 +1,18 @@
 import { FunctionComponent } from "react";
 
-export const WaffleIcon: FunctionComponent = () => {
+interface WaffleProps {
+  width: string;
+  height: string;
+}
+
+export const WaffleIcon: FunctionComponent<WaffleProps> = ({
+  width,
+  height,
+}) => {
   return (
     <svg
-      width="60"
-      height="60"
+      width={width}
+      height={height}
       viewBox="-45.5 0 347 347"
       version="1.1"
       xmlns="http://www.w3.org/2000/svg"
