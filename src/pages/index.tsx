@@ -34,7 +34,7 @@ const geistMono = localFont({
 
 const Home: FunctionComponent<Props> = ({ isVisible, numberOfSlides }) => {
   return (
-    <div className="flex flex-col h-auto w-screen justify-between bg-gradient-to-b from-[#BA73C6] via-[#D9A9EA] to-[#8B71BE]">
+    <div className="flex flex-col h-auto w-screen justify-between bg-gradient-to-b from-pink-500 via-purple-500 to-indigo-500">
       <header className="h-8 lg:h-16 w-full top-0 grid"></header>
 
       <main className="gap-8 container mx-auto border-4 rounded-3xl h-full w-full text-white">
