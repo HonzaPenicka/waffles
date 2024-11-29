@@ -59,7 +59,7 @@ const Home: FunctionComponent<Props> = ({ isVisible, numberOfSlides }) => {
                 <div
                   className="aspect-square w-4/5 md:w-3/5 lg:w-2/5 rounded-3xl"
                   style={{
-                    backgroundImage: 'url("/pics/head/666333.png")',
+                    backgroundImage: 'url("/pics/head/OREO.png")',
                     backgroundRepeat: "no-repeat",
                     backgroundSize: "cover",
                     backgroundPositionY: "50%",
@@ -67,7 +67,7 @@ const Home: FunctionComponent<Props> = ({ isVisible, numberOfSlides }) => {
                 ></div>
               </div>
 
-              <div className="aspect-auto lg:aspect-auto lg:h-full">
+              <div className="aspect-auto lg:aspect-auto lg:h-full lg:pt-4">
                 <div className="p-4 h-full w-auto rounded-3xl text-center text-sm md:text-xl lg:text-2xl">
                   "Jsme rodinný stánek nacházející se v malebném Harrachově.{" "}
                   <br className="hidden md:flex" />
@@ -92,13 +92,13 @@ const Home: FunctionComponent<Props> = ({ isVisible, numberOfSlides }) => {
                     <div
                       className="rounded-full border aspect-square h-40"
                       style={{
-                        backgroundImage: 'url("/pics/head/666333.png")',
+                        backgroundImage: 'url("/pics/head/MALINA.png")',
                         backgroundSize: "cover",
                         backgroundPositionY: "70%",
                       }}
                     ></div>
                     <div className="pt-8 text-center flex flex-col">
-                      <div className="font-bold text-xl">Klasik</div>
+                      <div className="font-bold text-xl uppercase">Klasik</div>
                     </div>
                   </div>
                 </SwiperSlide>
@@ -108,7 +108,7 @@ const Home: FunctionComponent<Props> = ({ isVisible, numberOfSlides }) => {
                     <div
                       className="rounded-full border aspect-square h-40"
                       style={{
-                        backgroundImage: 'url("/pics/head/666333.png")',
+                        backgroundImage: 'url("/pics/head/JEBKA.png")',
                         backgroundSize: "cover",
                         backgroundPositionY: "70%",
                       }}
@@ -126,7 +126,7 @@ const Home: FunctionComponent<Props> = ({ isVisible, numberOfSlides }) => {
                     <div
                       className="rounded-full border aspect-square h-40"
                       style={{
-                        backgroundImage: 'url("/pics/head/666333.png")',
+                        backgroundImage: 'url("/pics/head/BANANA.png")',
                         backgroundSize: "cover",
                         backgroundPositionY: "70%",
                       }}
@@ -144,7 +144,7 @@ const Home: FunctionComponent<Props> = ({ isVisible, numberOfSlides }) => {
                     <div
                       className="rounded-full border aspect-square h-40"
                       style={{
-                        backgroundImage: 'url("/pics/head/666333.png")',
+                        backgroundImage: 'url("/pics/head/OREO.png")',
                         backgroundSize: "cover",
                         backgroundPositionY: "70%",
                       }}
@@ -168,7 +168,7 @@ const Home: FunctionComponent<Props> = ({ isVisible, numberOfSlides }) => {
                     <div
                       className="rounded-full border aspect-square h-40"
                       style={{
-                        backgroundImage: 'url("/pics/head/666333.png")',
+                        backgroundImage: 'url("/pics/head/MALINA.png")',
                         backgroundSize: "cover",
                         backgroundPositionY: "70%",
                       }}
@@ -186,7 +186,7 @@ const Home: FunctionComponent<Props> = ({ isVisible, numberOfSlides }) => {
                     <div
                       className="rounded-full border aspect-square h-40"
                       style={{
-                        backgroundImage: 'url("/pics/head/666333.png")',
+                        backgroundImage: 'url("/pics/head/JEBKA.png")',
                         backgroundSize: "cover",
                         backgroundPositionY: "70%",
                       }}
@@ -204,7 +204,7 @@ const Home: FunctionComponent<Props> = ({ isVisible, numberOfSlides }) => {
                     <div
                       className="rounded-full border aspect-square h-40"
                       style={{
-                        backgroundImage: 'url("/pics/head/666333.png")',
+                        backgroundImage: 'url("/pics/head/BANANA.png")',
                         backgroundSize: "cover",
                         backgroundPositionY: "70%",
                       }}
@@ -222,7 +222,7 @@ const Home: FunctionComponent<Props> = ({ isVisible, numberOfSlides }) => {
                     <div
                       className="rounded-full border aspect-square h-40"
                       style={{
-                        backgroundImage: 'url("/pics/head/666333.png")',
+                        backgroundImage: 'url("/pics/head/OREO.png")',
                         backgroundSize: "cover",
                         backgroundPositionY: "70%",
                       }}
@@ -241,7 +241,7 @@ const Home: FunctionComponent<Props> = ({ isVisible, numberOfSlides }) => {
               <div
                 className="aspect-square w-4/5 md:w-3/5 lg:w-2/5 rounded-3xl flex items-center justify-center"
                 style={{
-                  backgroundImage: 'url("/pics/head/666333.png")',
+                  backgroundImage: 'url("/pics/head/OREO.png")',
                   backgroundRepeat: "no-repeat",
                   backgroundSize: "cover",
                   backgroundPositionY: "50%",
@@ -253,12 +253,12 @@ const Home: FunctionComponent<Props> = ({ isVisible, numberOfSlides }) => {
               </div>
             </div>
 
-            <div className="grid md:grid-cols-2 gap-8">
-              <div className="aspect-video rounded-3xl border bg-white grid text-right px-4 py-4 md:py-8 gap-2"></div>
-              <div className="w-full rounded-3xl border border-white grid text-right px-4 py-4 md:py-8 gap-2">
+            <div className="grid md:grid-cols-2 gap-8 lg:gap-16 text-lg md:text-xl lg:text-2xl pt-8">
+              <div className="aspect-video md:w-full md:h-full rounded-3xl border bg-white grid text-right px-4 py-4 md:py-8 gap-2"></div>
+              <div className="w-full rounded-3xl border border-white grid text-right px-4 py-4 md:py-8 gap-2 items-center">
                 <div className="uppercase font-semibold">Kde nás najedete</div>
 
-                <div className="flex flex-col gap-2">
+                <div className="flex flex-col gap-4">
                   <div className="flex gap-2 items-center font-bold justify-end text-right">
                     <ArrowIcon />
                     <div>
@@ -273,9 +273,9 @@ const Home: FunctionComponent<Props> = ({ isVisible, numberOfSlides }) => {
               </div>
             </div>
 
-            <div className="grid md:grid-cols-2 gap-8">
-              <div className="aspect-video rounded-3xl border bg-white grid text-left px-4 py-4 md:py-8 gap-2 md:order-last"></div>
-              <div className="w-full rounded-3xl border border-white grid text-left px-4 py-4 md:py-8 gap-2">
+            <div className="grid md:grid-cols-2 gap-8 lg:gap-16 text-lg md:text-xl lg:text-2xl">
+              <div className="aspect-video md:w-full md:h-full rounded-3xl border bg-white grid text-right px-4 py-4 md:py-8 gap-2 md:order-last"></div>
+              <div className="w-full rounded-3xl border border-white grid text-right px-4 py-4 md:py-8 gap-2 items-center">
                 <div className="uppercase">Otevírací doba</div>
                 <div className="grid gap-2">
                   <div className="font-bold">
