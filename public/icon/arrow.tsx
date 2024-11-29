@@ -11,7 +11,7 @@ export const ArrowIcon: FunctionComponent = () => {
     >
       <path
         d="M7 17L17 7M17 7H8M17 7V16"
-        stroke="#000000"
+        stroke="#FFFFFF"
         strokeWidth="2"
         strokeLinecap="round"
         strokeLinejoin="round"

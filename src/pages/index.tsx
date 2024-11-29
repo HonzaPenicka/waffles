@@ -34,178 +34,125 @@ const geistMono = localFont({
 
 const Home: FunctionComponent<Props> = ({ isVisible, numberOfSlides }) => {
   return (
-    <div className="flex flex-col h-auto w-screen justify-between">
-      <header className="h-8 lg:h-16 w-full top-0 grid bg-[#D7C2D7]"></header>
+    <div className="flex flex-col h-auto w-screen justify-between bg-gradient-to-b from-[#BA73C6] via-[#D9A9EA] to-[#8B71BE]">
+      <header className="h-8 lg:h-16 w-full top-0 grid"></header>
 
-      <main className="gap-8 container mx-auto border-4 rounded-3xl h-full w-full">
+      <main className="gap-8 container mx-auto border-4 rounded-3xl h-full w-full text-white">
         <div className="p-4 grid gap-8 items-center">
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div className="flex flex-col lg:col-span-2 gap-8">
+          <div className="grid gap-8">
+            <div className="flex flex-col gap-4 pt-4">
               <div className="flex items-center gap-4">
-                <div className="lg:hidden flex">
-                  <WaffleIcon width="70px" height="70px" />
+                <div className="md:hidden flex">
+                  <WaffleIcon width="60px" height="60px" />
                 </div>
 
-                <div className="hidden lg:flex lg:justify-self-start">
+                <div className="hidden md:flex lg:justify-self-start">
                   <WaffleIcon width="100px" height="100px" />
                 </div>
               </div>
 
-              <div className="text-5xl lg:text-7xl text-center font-semibold text-[#9F7EA9]">
-                Bubble Waffle <br />
-                Harrachov
+              <div className="text-3xl md:text-6xl text-center font-semibold uppercase">
+                Nejlepší waffle <br />v Harrachově
               </div>
 
               <div className="justify-center flex items-center">
                 <div
-                  className="aspect-square w-full lg:w-3/5 rounded-3xl"
+                  className="aspect-square w-4/5 md:w-3/5 lg:w-2/5 rounded-3xl"
                   style={{
-                    backgroundImage: 'url("/pics/products/pink-blue.png")',
+                    backgroundImage: 'url("/pics/head/666333.png")',
                     backgroundRepeat: "no-repeat",
                     backgroundSize: "cover",
-                    backgroundPositionY: "70%",
+                    backgroundPositionY: "50%",
                   }}
                 ></div>
               </div>
 
-              <div className="aspect-square lg:aspect-auto lg:h-full bg-[#D7C2D7]">
-                <div className="p-4 bg-[#EEEDA2] h-full w-full border-[#D7C2D7] rounded-3xl"></div>
+              <div className="aspect-auto lg:aspect-auto lg:h-full">
+                <div className="p-4 h-full w-auto rounded-3xl text-center text-sm md:text-xl lg:text-2xl">
+                  "Jsme rodinný stánek nacházející se v malebném Harrachově.{" "}
+                  <br className="hidden md:flex" />
+                  Naše vášeň spočívá v komplikování kvalitních surovin{" "}
+                  <br className="hidden md:flex" /> a vytváření těch nejlepších
+                  sladkých zážitků."
+                </div>
               </div>
             </div>
 
             {/* Wrap Swiper in a div with visibility classes */}
-            <div className="grid lg:hidden">
+            <div className="grid md:hidden">
               <Swiper
                 modules={[Navigation, Pagination, Scrollbar, A11y]}
                 spaceBetween={0}
                 slidesPerView={1}
                 navigation
-                className="w-full bg-white rounded-3xl aspect-square"
+                className="w-full rounded-3xl"
               >
-                <SwiperSlide className="grid text-[#4D5BB8]">
-                  <div className="w-full flex flex-col justify-between">
-                    <div className="p-4 text-sm text-left flex flex-col">
-                      <div className="font-semibold">Full of chocolate</div>
-                      <div>Creampie</div>
-                    </div>
-
-                    <div className="text-sm items-center justify-center grid">
-                      <div
-                        className="rounded-full border aspect-square h-44 lg:h-36"
-                        style={{
-                          backgroundImage:
-                            'url("/pics/products/pink-blue.png")',
-                          backgroundRepeat: "no-repeat",
-                          backgroundSize: "cover",
-                          backgroundPositionY: "70%",
-                        }}
-                      ></div>
-                    </div>
-
-                    <div className="m-4 flex justify-end">
-                      <button className="p-0.5 pl-4 text-sm gap-2 border border-[#D7C2D7] rounded-3xl items-center flex">
-                        <div>Discover more</div>
-
-                        <div className="rounded-full border border-[#D7C2D7] p-2 bg-[#D7C2D7]">
-                          <ArrowIcon />
-                        </div>
-                      </button>
+                <SwiperSlide className="w-full flex flex-col">
+                  <div className="text-sm items-center justify-center grid">
+                    <div
+                      className="rounded-full border aspect-square h-40"
+                      style={{
+                        backgroundImage: 'url("/pics/head/666333.png")',
+                        backgroundSize: "cover",
+                        backgroundPositionY: "70%",
+                      }}
+                    ></div>
+                    <div className="pt-8 text-center flex flex-col">
+                      <div className="font-bold text-xl">Klasik</div>
                     </div>
                   </div>
                 </SwiperSlide>
 
-                <SwiperSlide className="grid text-[#4D5BB8]">
-                  <div className="w-full flex flex-col justify-between">
-                    <div className="p-4 text-sm text-left flex flex-col">
-                      <div className="font-semibold">Full of chocolate</div>
-                      <div>Creampie</div>
-                    </div>
-
-                    <div className="text-sm items-center justify-center grid">
-                      <div
-                        className="rounded-full border aspect-square h-44 lg:h-36"
-                        style={{
-                          backgroundImage:
-                            'url("/pics/products/pink-blue.png")',
-                          backgroundRepeat: "no-repeat",
-                          backgroundSize: "cover",
-                          backgroundPositionY: "70%",
-                        }}
-                      ></div>
-                    </div>
-
-                    <div className="m-4 flex justify-end">
-                      <button className="p-0.5 pl-4 text-sm gap-2 border border-[#D7C2D7] rounded-3xl items-center flex">
-                        <div>Discover more</div>
-
-                        <div className="rounded-full border border-[#D7C2D7] p-2 bg-[#D7C2D7]">
-                          <ArrowIcon />
-                        </div>
-                      </button>
+                <SwiperSlide className="w-full flex flex-col">
+                  <div className="text-sm items-center justify-center grid">
+                    <div
+                      className="rounded-full border aspect-square h-40"
+                      style={{
+                        backgroundImage: 'url("/pics/head/666333.png")',
+                        backgroundSize: "cover",
+                        backgroundPositionY: "70%",
+                      }}
+                    ></div>
+                    <div className="py-8 text-center flex flex-col">
+                      <div className="font-bold text-xl uppercase">
+                        Jablko <br /> skořice
+                      </div>
                     </div>
                   </div>
                 </SwiperSlide>
 
-                <SwiperSlide className="grid text-[#4D5BB8]">
-                  <div className="w-full flex flex-col justify-between">
-                    <div className="p-4 text-sm text-left flex flex-col">
-                      <div className="font-semibold">Full of chocolate</div>
-                      <div>Creampie</div>
-                    </div>
-
-                    <div className="text-sm items-center justify-center grid">
-                      <div
-                        className="rounded-full border aspect-square h-44 lg:h-36"
-                        style={{
-                          backgroundImage:
-                            'url("/pics/products/pink-blue.png")',
-                          backgroundRepeat: "no-repeat",
-                          backgroundSize: "cover",
-                          backgroundPositionY: "70%",
-                        }}
-                      ></div>
-                    </div>
-
-                    <div className="m-4 flex justify-end">
-                      <button className="p-0.5 pl-4 text-sm gap-2 border border-[#D7C2D7] rounded-3xl items-center flex">
-                        <div>Discover more</div>
-
-                        <div className="rounded-full border border-[#D7C2D7] p-2 bg-[#D7C2D7]">
-                          <ArrowIcon />
-                        </div>
-                      </button>
+                <SwiperSlide className="w-full flex flex-col">
+                  <div className="text-sm items-center justify-center grid">
+                    <div
+                      className="rounded-full border aspect-square h-40"
+                      style={{
+                        backgroundImage: 'url("/pics/head/666333.png")',
+                        backgroundSize: "cover",
+                        backgroundPositionY: "70%",
+                      }}
+                    ></div>
+                    <div className="py-8 text-center flex flex-col">
+                      <div className="font-bold text-xl uppercase">
+                        Banana <br /> split
+                      </div>
                     </div>
                   </div>
                 </SwiperSlide>
 
-                <SwiperSlide className="grid text-[#4D5BB8]">
-                  <div className="w-full flex flex-col justify-between">
-                    <div className="p-4 text-sm text-left flex flex-col">
-                      <div className="font-semibold">Full of chocolate</div>
-                      <div>Creampie</div>
-                    </div>
-
-                    <div className="text-sm items-center justify-center grid">
-                      <div
-                        className="rounded-full border aspect-square h-44 lg:h-36"
-                        style={{
-                          backgroundImage:
-                            'url("/pics/products/pink-blue.png")',
-                          backgroundRepeat: "no-repeat",
-                          backgroundSize: "cover",
-                          backgroundPositionY: "70%",
-                        }}
-                      ></div>
-                    </div>
-
-                    <div className="m-4 flex justify-end">
-                      <button className="p-0.5 pl-4 text-sm gap-2 border border-[#D7C2D7] rounded-3xl items-center flex">
-                        <div>Discover more</div>
-
-                        <div className="rounded-full border border-[#D7C2D7] p-2 bg-[#D7C2D7]">
-                          <ArrowIcon />
-                        </div>
-                      </button>
+                <SwiperSlide className="w-full flex flex-col">
+                  <div className="text-sm items-center justify-center grid">
+                    <div
+                      className="rounded-full border aspect-square h-40"
+                      style={{
+                        backgroundImage: 'url("/pics/head/666333.png")',
+                        backgroundSize: "cover",
+                        backgroundPositionY: "70%",
+                      }}
+                    ></div>
+                    <div className="py-8 text-center flex flex-col">
+                      <div className="font-bold text-xl uppercase">
+                        Namixuj <br /> si sám
+                      </div>
                     </div>
                   </div>
                 </SwiperSlide>
@@ -214,99 +161,148 @@ const Home: FunctionComponent<Props> = ({ isVisible, numberOfSlides }) => {
               </Swiper>
             </div>
 
-            <div className="hidden lg:gap-4 lg:flex lg:flex-col">
-              <div className="w-full flex flex-col justify-between bg-white aspect-square rounded-3xl">
-                <div className="p-4 text-sm text-left flex flex-col">
-                  <div className="font-semibold">Full of chocolate</div>
-                  <div>Creampie</div>
-                </div>
-
-                <div className="text-sm items-center justify-center grid">
-                  <div
-                    className="rounded-full border aspect-square h-44"
-                    style={{
-                      backgroundImage: 'url("/pics/products/pink-blue.png")',
-                      backgroundRepeat: "no-repeat",
-                      backgroundSize: "cover",
-                      backgroundPositionY: "70%",
-                    }}
-                  ></div>
-                </div>
-
-                <div className="m-4 flex justify-end">
-                  <button className="p-0.5 pl-4 text-sm gap-2 border border-[#D7C2D7] rounded-3xl items-center flex">
-                    <div>Discover more</div>
-
-                    <div className="rounded-full border border-[#D7C2D7] p-2 bg-[#D7C2D7]">
-                      <ArrowIcon />
+            <div className="hidden md:gap-4 md:grid">
+              <div className="grid md:grid-cols-2 gap-4 lg:grid-cols-4 items-center">
+                <div className="w-full flex flex-col">
+                  <div className="text-sm items-center justify-center grid">
+                    <div
+                      className="rounded-full border aspect-square h-40"
+                      style={{
+                        backgroundImage: 'url("/pics/head/666333.png")',
+                        backgroundSize: "cover",
+                        backgroundPositionY: "70%",
+                      }}
+                    ></div>
+                    <div className="py-8 text-center flex flex-col">
+                      <div className="font-bold md:text-2xl lg:text-3xl uppercase">
+                        Klasik
+                      </div>
                     </div>
-                  </button>
+                  </div>
+                </div>
+
+                <div className="w-full flex flex-col">
+                  <div className="text-sm items-center justify-center grid">
+                    <div
+                      className="rounded-full border aspect-square h-40"
+                      style={{
+                        backgroundImage: 'url("/pics/head/666333.png")',
+                        backgroundSize: "cover",
+                        backgroundPositionY: "70%",
+                      }}
+                    ></div>
+                    <div className="py-8 text-center flex flex-col">
+                      <div className="font-bold md:text-2xl lg:text-3xl uppercase">
+                        jablko <br /> & skořice
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="w-full flex flex-col">
+                  <div className="text-sm items-center justify-center grid">
+                    <div
+                      className="rounded-full border aspect-square h-40"
+                      style={{
+                        backgroundImage: 'url("/pics/head/666333.png")',
+                        backgroundSize: "cover",
+                        backgroundPositionY: "70%",
+                      }}
+                    ></div>
+                    <div className="py-8 text-center flex flex-col">
+                      <div className="font-bold md:text-2xl lg:text-3xl uppercase">
+                        banana <br /> split
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="w-full flex flex-col">
+                  <div className="text-sm items-center justify-center grid">
+                    <div
+                      className="rounded-full border aspect-square h-40"
+                      style={{
+                        backgroundImage: 'url("/pics/head/666333.png")',
+                        backgroundSize: "cover",
+                        backgroundPositionY: "70%",
+                      }}
+                    ></div>
+                    <div className="py-8 text-center flex flex-col">
+                      <div className="font-bold md:text-2xl lg:text-3xl uppercase">
+                        namixuj <br /> si sám
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
+            </div>
 
-              <div className="w-full flex flex-col justify-between bg-white aspect-square rounded-3xl">
-                <div className="p-4 text-sm text-left flex flex-col">
-                  <div className="font-semibold">Full of chocolate</div>
-                  <div>Creampie</div>
-                </div>
+            <div className="justify-center flex items-center">
+              <div
+                className="aspect-square w-4/5 md:w-3/5 lg:w-2/5 rounded-3xl flex items-center justify-center"
+                style={{
+                  backgroundImage: 'url("/pics/head/666333.png")',
+                  backgroundRepeat: "no-repeat",
+                  backgroundSize: "cover",
+                  backgroundPositionY: "50%",
+                }}
+              >
+                <button className="uppercase py-2 px-4 md:py-4 md:px-8 h-auto bg-white text-[#8867BD] text-lg md:text-xl lg:text-2xl font-semibold rounded-3xl">
+                  Sestav si sám
+                </button>
+              </div>
+            </div>
 
-                <div className="text-sm items-center justify-center grid">
-                  <div
-                    className="rounded-full border aspect-square h-44"
-                    style={{
-                      backgroundImage: 'url("/pics/products/pink-blue.png")',
-                      backgroundRepeat: "no-repeat",
-                      backgroundSize: "cover",
-                      backgroundPositionY: "70%",
-                    }}
-                  ></div>
-                </div>
+            <div className="grid md:grid-cols-2 gap-8">
+              <div className="aspect-video rounded-3xl border bg-white grid text-right px-4 py-4 md:py-8 gap-2"></div>
+              <div className="w-full rounded-3xl border border-white grid text-right px-4 py-4 md:py-8 gap-2">
+                <div className="uppercase font-semibold">Kde nás najedete</div>
 
-                <div className="m-4 flex justify-end">
-                  <button className="p-0.5 pl-4 text-sm gap-2 border border-[#D7C2D7] rounded-3xl items-center flex">
-                    <div>Discover more</div>
-
-                    <div className="rounded-full border border-[#D7C2D7] p-2 bg-[#D7C2D7]">
-                      <ArrowIcon />
+                <div className="flex flex-col gap-2">
+                  <div className="flex gap-2 items-center font-bold justify-end text-right">
+                    <ArrowIcon />
+                    <div>
+                      Zimní 139 <br /> Harrachov
                     </div>
-                  </button>
+                  </div>
+
+                  <div>
+                    u sjezdovky <br /> pod Černou horou
+                  </div>
                 </div>
               </div>
+            </div>
 
-              <div className="w-full flex flex-col justify-between bg-white aspect-square rounded-3xl">
-                <div className="p-4 text-sm text-left flex flex-col">
-                  <div className="font-semibold">Full of chocolate</div>
-                  <div>Creampie</div>
-                </div>
+            <div className="grid md:grid-cols-2 gap-8">
+              <div className="aspect-video rounded-3xl border bg-white grid text-left px-4 py-4 md:py-8 gap-2 md:order-last"></div>
+              <div className="w-full rounded-3xl border border-white grid text-left px-4 py-4 md:py-8 gap-2">
+                <div className="uppercase">Otevírací doba</div>
+                <div className="grid gap-2">
+                  <div className="font-bold">
+                    <div>pondělí - neděle</div>
+                    <div>10:30 - 20:30</div>
+                  </div>
 
-                <div className="text-sm items-center justify-center grid">
-                  <div
-                    className="rounded-full border aspect-square h-44"
-                    style={{
-                      backgroundImage: 'url("/pics/products/pink-blue.png")',
-                      backgroundRepeat: "no-repeat",
-                      backgroundSize: "cover",
-                      backgroundPositionY: "70%",
-                    }}
-                  ></div>
-                </div>
-
-                <div className="m-4 flex justify-end">
-                  <button className="p-0.5 pl-4 text-sm gap-2 border border-[#D7C2D7] rounded-3xl items-center flex">
-                    <div>Discover more</div>
-
-                    <div className="rounded-full border border-[#D7C2D7] p-2 bg-[#D7C2D7]">
-                      <ArrowIcon />
-                    </div>
-                  </button>
+                  <div>
+                    u sjezdovky <br /> pod Černou horou
+                  </div>
                 </div>
               </div>
+            </div>
+
+            <div className="grid uppercase text-center items-center gap-4 font-semibold text-sm py-4">
+              <div>sledujte nás</div>
+              <div className="flex gap-4 items-center justify-center">
+                <div>FB</div>
+                <div>INS</div>
+              </div>
+              <div>waffle harrachov</div>
             </div>
           </div>
         </div>
       </main>
 
-      <footer className="h-8 lg:h-16 w-full top-0 grid bg-[#D7C2D7]"></footer>
+      <footer className="h-8 lg:h-16 w-full top-0 grid"></footer>
     </div>
   );
 };
