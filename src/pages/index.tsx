@@ -253,14 +253,16 @@ const Home: FunctionComponent = () => {
             </div>
 
             <div className="grid md:grid-cols-2 gap-8 lg:gap-16 text-lg md:text-xl lg:text-2xl">
-              <iframe
-                className="rounded-3xl md:order-last aspect-video"
-                width="100%"
-                height="100%"
-                frameBorder="0"
-                scrolling="no"
-                src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=harrachov%20219+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
-              ></iframe>
+              <div className="md:order-last aspect-video">
+                <iframe
+                  className="rounded-3xl"
+                  width="100%"
+                  height="100%"
+                  frameBorder="0"
+                  scrolling="no"
+                  src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=harrachov%20219+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+                ></iframe>
+              </div>
               <div className="w-full rounded-3xl border border-white grid text-left px-4 py-4 md:py-8 gap-2 items-center">
                 <div className="uppercase font-semibold">Otevírací doba</div>
                 <div className="grid gap-2">
