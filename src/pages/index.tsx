@@ -47,7 +47,7 @@ const Home: FunctionComponent = () => {
               </div>
 
               <div className="aspect-auto lg:aspect-auto lg:h-full">
-                <div className="p-4 h-full w-auto rounded-3xl text-center text-sm md:text-xl lg:text-2xl">
+                <div className="p-4 h-full w-auto rounded-3xl text-center text-lg md:text-xl lg:text-2xl">
                   "Jsme rodinný stánek nacházející se v malebném Harrachově.{" "}
                   <br className="hidden md:flex" />
                   Naše vášeň spočívá v komplikování kvalitních surovin{" "}
@@ -69,7 +69,7 @@ const Home: FunctionComponent = () => {
                 <SwiperSlide className="w-full flex flex-col">
                   <div className="text-sm items-center justify-center grid">
                     <div
-                      className="rounded-full border aspect-square h-32"
+                      className="rounded-full border aspect-square h-40"
                       style={{
                         backgroundImage: 'url("/pics/head/MALINA.png")',
                         backgroundSize: "cover",
@@ -85,7 +85,7 @@ const Home: FunctionComponent = () => {
                 <SwiperSlide className="w-full flex flex-col">
                   <div className="text-sm items-center justify-center grid">
                     <div
-                      className="rounded-full border aspect-square h-32"
+                      className="rounded-full border aspect-square h-40"
                       style={{
                         backgroundImage: 'url("/pics/head/JEBKA.png")',
                         backgroundSize: "cover",
@@ -103,7 +103,7 @@ const Home: FunctionComponent = () => {
                 <SwiperSlide className="w-full flex flex-col">
                   <div className="text-sm items-center justify-center grid">
                     <div
-                      className="rounded-full border aspect-square h-32"
+                      className="rounded-full border aspect-square h-40"
                       style={{
                         backgroundImage: 'url("/pics/head/BANANA.png")',
                         backgroundSize: "cover",
@@ -121,7 +121,7 @@ const Home: FunctionComponent = () => {
                 <SwiperSlide className="w-full flex flex-col">
                   <div className="text-sm items-center justify-center grid">
                     <div
-                      className="rounded-full border aspect-square h-32"
+                      className="rounded-full border aspect-square h-40"
                       style={{
                         backgroundImage: 'url("/pics/head/OREO.png")',
                         backgroundSize: "cover",
@@ -145,7 +145,7 @@ const Home: FunctionComponent = () => {
                 <div className="w-full flex flex-col">
                   <div className="text-sm items-center justify-center grid">
                     <div
-                      className="rounded-full border aspect-square h-32"
+                      className="rounded-full border aspect-square h-40"
                       style={{
                         backgroundImage: 'url("/pics/head/MALINA.png")',
                         backgroundSize: "cover",
@@ -163,7 +163,7 @@ const Home: FunctionComponent = () => {
                 <div className="w-full flex flex-col">
                   <div className="text-sm items-center justify-center grid">
                     <div
-                      className="rounded-full border aspect-square h-32"
+                      className="rounded-full border aspect-square h-40"
                       style={{
                         backgroundImage: 'url("/pics/head/JEBKA.png")',
                         backgroundSize: "cover",
@@ -181,7 +181,7 @@ const Home: FunctionComponent = () => {
                 <div className="w-full flex flex-col">
                   <div className="text-sm items-center justify-center grid">
                     <div
-                      className="rounded-full border aspect-square h-32"
+                      className="rounded-full border aspect-square h-40"
                       style={{
                         backgroundImage: 'url("/pics/head/BANANA.png")',
                         backgroundSize: "cover",
@@ -199,7 +199,7 @@ const Home: FunctionComponent = () => {
                 <div className="w-full flex flex-col">
                   <div className="text-sm items-center justify-center grid">
                     <div
-                      className="rounded-full border aspect-square h-32"
+                      className="rounded-full border aspect-square h-40"
                       style={{
                         backgroundImage: 'url("/pics/head/OREO.png")',
                         backgroundSize: "cover",
