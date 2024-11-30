@@ -11,30 +11,7 @@ import { FunctionComponent } from "react";
 import { InstagramIcon } from "../../public/icon/instagram";
 import { FacebookIcon } from "../../public/icon/facebook";
 
-enum Colors {
-  PURPLE = "",
-  YELLOW = "#",
-  GREEN = "",
-  MIX = "",
-}
-interface Props {
-  isVisible: boolean;
-  numberOfSlides: number;
-  backgroundColor: Colors[];
-}
-
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
-});
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
-});
-
-const Home: FunctionComponent<Props> = ({ isVisible, numberOfSlides }) => {
+const Home: FunctionComponent = () => {
   return (
     <div className="flex flex-col h-auto w-screen justify-between bg-gradient-to-b from-pink-500 via-purple-500 to-indigo-500">
       <header className="h-8 lg:h-16 w-full top-0 grid"></header>
@@ -87,7 +64,7 @@ const Home: FunctionComponent<Props> = ({ isVisible, numberOfSlides }) => {
                 spaceBetween={0}
                 slidesPerView={1}
                 navigation
-                className="w-full rounded-3xl"
+                className="w-full rounded-3xl swiper__change--color"
               >
                 <SwiperSlide className="w-full flex flex-col">
                   <div className="text-sm items-center justify-center grid">
@@ -176,7 +153,7 @@ const Home: FunctionComponent<Props> = ({ isVisible, numberOfSlides }) => {
                       }}
                     ></div>
                     <div className="py-8 text-center flex flex-col">
-                      <div className="font-bold md:text-2xl lg:text-3xl uppercase">
+                      <div className="font-bold md:text-2xl lg:text-3xl uppercase pb-8">
                         Klasik
                       </div>
                     </div>
