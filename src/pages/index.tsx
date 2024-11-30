@@ -1,13 +1,15 @@
 import localFont from "next/font/local";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { WaffleIcon } from "../../public/icon/waffle";
-import { ArrowIcon } from "../../public/icon/arrow";
+import { LocationIcon } from "../../public/icon/location";
 import { Navigation, Pagination, Scrollbar, A11y } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 import "swiper/css/navigation";
 import { FunctionComponent } from "react";
+import { InstagramIcon } from "../../public/icon/instagram";
+import { FacebookIcon } from "../../public/icon/facebook";
 
 enum Colors {
   PURPLE = "",
@@ -55,7 +57,7 @@ const Home: FunctionComponent<Props> = ({ isVisible, numberOfSlides }) => {
                 Nejlepší waffle <br />v Harrachově
               </div>
 
-              <div className="justify-center flex items-center">
+              <div className="justify-center flex items-center py-4">
                 <div
                   className="aspect-square w-4/5 md:w-3/5 lg:w-2/5 rounded-3xl"
                   style={{
@@ -67,7 +69,7 @@ const Home: FunctionComponent<Props> = ({ isVisible, numberOfSlides }) => {
                 ></div>
               </div>
 
-              <div className="aspect-auto lg:aspect-auto lg:h-full lg:pt-4">
+              <div className="aspect-auto lg:aspect-auto lg:h-full">
                 <div className="p-4 h-full w-auto rounded-3xl text-center text-sm md:text-xl lg:text-2xl">
                   "Jsme rodinný stánek nacházející se v malebném Harrachově.{" "}
                   <br className="hidden md:flex" />
@@ -90,7 +92,7 @@ const Home: FunctionComponent<Props> = ({ isVisible, numberOfSlides }) => {
                 <SwiperSlide className="w-full flex flex-col">
                   <div className="text-sm items-center justify-center grid">
                     <div
-                      className="rounded-full border aspect-square h-40"
+                      className="rounded-full border aspect-square h-32"
                       style={{
                         backgroundImage: 'url("/pics/head/MALINA.png")',
                         backgroundSize: "cover",
@@ -106,7 +108,7 @@ const Home: FunctionComponent<Props> = ({ isVisible, numberOfSlides }) => {
                 <SwiperSlide className="w-full flex flex-col">
                   <div className="text-sm items-center justify-center grid">
                     <div
-                      className="rounded-full border aspect-square h-40"
+                      className="rounded-full border aspect-square h-32"
                       style={{
                         backgroundImage: 'url("/pics/head/JEBKA.png")',
                         backgroundSize: "cover",
@@ -124,7 +126,7 @@ const Home: FunctionComponent<Props> = ({ isVisible, numberOfSlides }) => {
                 <SwiperSlide className="w-full flex flex-col">
                   <div className="text-sm items-center justify-center grid">
                     <div
-                      className="rounded-full border aspect-square h-40"
+                      className="rounded-full border aspect-square h-32"
                       style={{
                         backgroundImage: 'url("/pics/head/BANANA.png")',
                         backgroundSize: "cover",
@@ -142,7 +144,7 @@ const Home: FunctionComponent<Props> = ({ isVisible, numberOfSlides }) => {
                 <SwiperSlide className="w-full flex flex-col">
                   <div className="text-sm items-center justify-center grid">
                     <div
-                      className="rounded-full border aspect-square h-40"
+                      className="rounded-full border aspect-square h-32"
                       style={{
                         backgroundImage: 'url("/pics/head/OREO.png")',
                         backgroundSize: "cover",
@@ -166,7 +168,7 @@ const Home: FunctionComponent<Props> = ({ isVisible, numberOfSlides }) => {
                 <div className="w-full flex flex-col">
                   <div className="text-sm items-center justify-center grid">
                     <div
-                      className="rounded-full border aspect-square h-40"
+                      className="rounded-full border aspect-square h-32"
                       style={{
                         backgroundImage: 'url("/pics/head/MALINA.png")',
                         backgroundSize: "cover",
@@ -184,7 +186,7 @@ const Home: FunctionComponent<Props> = ({ isVisible, numberOfSlides }) => {
                 <div className="w-full flex flex-col">
                   <div className="text-sm items-center justify-center grid">
                     <div
-                      className="rounded-full border aspect-square h-40"
+                      className="rounded-full border aspect-square h-32"
                       style={{
                         backgroundImage: 'url("/pics/head/JEBKA.png")',
                         backgroundSize: "cover",
@@ -202,7 +204,7 @@ const Home: FunctionComponent<Props> = ({ isVisible, numberOfSlides }) => {
                 <div className="w-full flex flex-col">
                   <div className="text-sm items-center justify-center grid">
                     <div
-                      className="rounded-full border aspect-square h-40"
+                      className="rounded-full border aspect-square h-32"
                       style={{
                         backgroundImage: 'url("/pics/head/BANANA.png")',
                         backgroundSize: "cover",
@@ -220,7 +222,7 @@ const Home: FunctionComponent<Props> = ({ isVisible, numberOfSlides }) => {
                 <div className="w-full flex flex-col">
                   <div className="text-sm items-center justify-center grid">
                     <div
-                      className="rounded-full border aspect-square h-40"
+                      className="rounded-full border aspect-square h-32"
                       style={{
                         backgroundImage: 'url("/pics/head/OREO.png")',
                         backgroundSize: "cover",
@@ -239,28 +241,28 @@ const Home: FunctionComponent<Props> = ({ isVisible, numberOfSlides }) => {
 
             <div className="justify-center flex items-center">
               <div
-                className="aspect-square w-4/5 md:w-3/5 lg:w-2/5 rounded-3xl flex items-center justify-center"
+                className="aspect-square w-full md:w-4/5 rounded-3xl flex items-center justify-center"
                 style={{
-                  backgroundImage: 'url("/pics/head/OREO.png")',
+                  backgroundImage: 'url("/pics/products/6236.png")',
                   backgroundRepeat: "no-repeat",
                   backgroundSize: "cover",
                   backgroundPositionY: "50%",
                 }}
               >
-                <button className="uppercase py-2 px-4 md:py-4 md:px-8 h-auto bg-white text-[#8867BD] text-lg md:text-xl lg:text-2xl font-semibold rounded-3xl">
+                <button className="uppercase py-2 px-4 md:py-4 md:px-8 lg:py-8 lg:px-16 h-auto bg-white text-[#8867BD] text-lg md:text-xl lg:text-2xl font-semibold rounded-3xl">
                   Sestav si sám
                 </button>
               </div>
             </div>
 
             <div className="grid md:grid-cols-2 gap-8 lg:gap-16 text-lg md:text-xl lg:text-2xl pt-8">
-              <div className="aspect-video md:w-full md:h-full rounded-3xl border bg-white grid text-right px-4 py-4 md:py-8 gap-2"></div>
+              <div className="aspect-video md:w-full md:h-full rounded-3xl border bg-[url('/pics/2662.png')] bg-cover bg-no-repeat grid text-right px-4 py-4 md:py-8 gap-2"></div>
               <div className="w-full rounded-3xl border border-white grid text-right px-4 py-4 md:py-8 gap-2 items-center">
-                <div className="uppercase font-semibold">Kde nás najedete</div>
+                <div className="uppercase font-semibold">Kde nás najdete</div>
 
                 <div className="flex flex-col gap-4">
                   <div className="flex gap-2 items-center font-bold justify-end text-right">
-                    <ArrowIcon />
+                    <LocationIcon />
                     <div>
                       Zimní 139 <br /> Harrachov
                     </div>
@@ -274,9 +276,16 @@ const Home: FunctionComponent<Props> = ({ isVisible, numberOfSlides }) => {
             </div>
 
             <div className="grid md:grid-cols-2 gap-8 lg:gap-16 text-lg md:text-xl lg:text-2xl">
-              <div className="aspect-video md:w-full md:h-full rounded-3xl border bg-white grid text-right px-4 py-4 md:py-8 gap-2 md:order-last"></div>
-              <div className="w-full rounded-3xl border border-white grid text-right px-4 py-4 md:py-8 gap-2 items-center">
-                <div className="uppercase">Otevírací doba</div>
+              <iframe
+                className="rounded-3xl md:order-last aspect-video"
+                width="100%"
+                height="100%"
+                frameBorder="0"
+                scrolling="no"
+                src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=harrachov%20219+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+              ></iframe>
+              <div className="w-full rounded-3xl border border-white grid text-left px-4 py-4 md:py-8 gap-2 items-center">
+                <div className="uppercase font-semibold">Otevírací doba</div>
                 <div className="grid gap-2">
                   <div className="font-bold">
                     <div>pondělí - neděle</div>
@@ -293,8 +302,8 @@ const Home: FunctionComponent<Props> = ({ isVisible, numberOfSlides }) => {
             <div className="grid uppercase text-center items-center gap-4 font-semibold text-sm py-4">
               <div>sledujte nás</div>
               <div className="flex gap-4 items-center justify-center">
-                <div>FB</div>
-                <div>INS</div>
+                <FacebookIcon />
+                <InstagramIcon />
               </div>
               <div>waffle harrachov</div>
             </div>
