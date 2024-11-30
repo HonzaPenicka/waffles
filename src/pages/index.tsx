@@ -36,12 +36,13 @@ const Home: FunctionComponent = () => {
 
               <div className="justify-center flex items-center py-4">
                 <div
-                  className="aspect-square w-4/5 md:w-3/5 lg:w-2/5 rounded-3xl"
+                  className="aspect-video w-full md:w-3/5 rounded-3xl"
                   style={{
-                    backgroundImage: 'url("/pics/head/OREO.png")',
+                    backgroundImage: 'url("/pics/head/2326.png")',
                     backgroundRepeat: "no-repeat",
-                    backgroundSize: "cover",
+                    backgroundSize: "contain",
                     backgroundPositionY: "50%",
+                    backgroundPositionX: "50%",
                   }}
                 ></div>
               </div>
@@ -123,7 +124,7 @@ const Home: FunctionComponent = () => {
                     <div
                       className="rounded-full border aspect-square h-40"
                       style={{
-                        backgroundImage: 'url("/pics/head/OREO.png")',
+                        backgroundImage: 'url("/pics/head/2326.png")',
                         backgroundSize: "cover",
                         backgroundPositionY: "70%",
                       }}
@@ -201,7 +202,7 @@ const Home: FunctionComponent = () => {
                     <div
                       className="rounded-full border aspect-square h-40"
                       style={{
-                        backgroundImage: 'url("/pics/head/OREO.png")',
+                        backgroundImage: 'url("/pics/head/2326.png")',
                         backgroundSize: "cover",
                         backgroundPositionY: "70%",
                       }}
