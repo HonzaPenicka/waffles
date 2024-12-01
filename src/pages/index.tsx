@@ -227,7 +227,7 @@ const Home: FunctionComponent = () => {
 
             <div className="justify-center flex items-center">
               <div
-                className="aspect-square w-10/12 md:w-3/5 rounded-3xl flex items-center justify-center transition-transform duration-[700ms]"
+                className="aspect-square w-9/12 md:w-3/5 rounded-3xl flex items-center justify-center transition-transform duration-[700ms]"
                 style={{
                   backgroundImage: 'url("/pics/products/6236.png")',
                   backgroundRepeat: "no-repeat",
