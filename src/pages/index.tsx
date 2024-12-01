@@ -269,7 +269,7 @@ const Home: FunctionComponent = () => {
             </div>
 
             <div className="grid md:grid-cols-2 gap-8 lg:gap-16 text-lg md:text-xl lg:text-2xl">
-              <div className="md:order-last aspect-video md:aspect-auto md:h-full">
+              <div className="md:order-last aspect-video md:h-full">
                 <iframe
                   className="rounded-3xl"
                   width="100%"
