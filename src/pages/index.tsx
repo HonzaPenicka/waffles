@@ -55,11 +55,11 @@ const Home: FunctionComponent = () => {
 
               <div className="aspect-auto lg:aspect-auto lg:h-full">
                 <div className="p-4 h-full w-auto rounded-3xl text-center text-lg md:text-xl lg:text-2xl">
-                  "Jsme rodinný stánek nacházející se v malebném Harrachově.{" "}
+                  Rodinný stánek v srdci malebného Harrachova.{" "}
                   <br className="hidden md:flex" />
-                  Naše vášeň spočívá v komplikování kvalitních surovin{" "}
-                  <br className="hidden md:flex" /> a vytváření těch nejlepších
-                  sladkých zážitků."
+                  Naše vášeň je v používání prvotřídních surovin{" "}
+                  <br className="hidden md:flex" />a vytváření nezapomenutelných
+                  sladkých zážitků.
                 </div>
               </div>
             </div>
