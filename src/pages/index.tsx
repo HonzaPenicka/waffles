@@ -36,15 +36,17 @@ const Home: FunctionComponent = () => {
                 </div>
               </div>
 
-              <div className="text-3xl md:text-6xl text-center font-semibold uppercase">
+              <h1 className="text-3xl md:text-6xl text-center font-semibold uppercase">
                 Nejlepší waffle <br />v Harrachově
-              </div>
+              </h1>
 
               <div className="justify-center flex items-center py-4">
                 <div
                   className="aspect-video w-full md:w-3/5 rounded-3xl"
+                  aria-label="Nejlepší waffle v Harrachově"
+                  role="img"
                   style={{
-                    backgroundImage: 'url("/pics/head/2326.png")',
+                    backgroundImage: 'url("/pics/head/2326.webp")',
                     backgroundRepeat: "no-repeat",
                     backgroundSize: "contain",
                     backgroundPositionY: "50%",
@@ -54,13 +56,13 @@ const Home: FunctionComponent = () => {
               </div>
 
               <div className="aspect-auto lg:aspect-auto lg:h-full">
-                <div className="p-4 h-full w-auto rounded-3xl text-center text-lg md:text-xl lg:text-2xl">
+                <p className="p-4 h-full w-auto rounded-3xl text-center text-lg md:text-xl lg:text-2xl">
                   Rodinný stánek v srdci malebného Harrachova.{" "}
                   <br className="hidden md:flex" />
                   Naše vášeň je v používání prvotřídních surovin{" "}
                   <br className="hidden md:flex" />a vytváření nezapomenutelných
                   sladkých zážitků.
-                </div>
+                </p>
               </div>
             </div>
 
@@ -78,13 +80,14 @@ const Home: FunctionComponent = () => {
                     <div
                       className="rounded-full aspect-square h-40 hover:scale-110 hover:duration-300"
                       style={{
-                        backgroundImage: 'url("/pics/head/MALINA.png")',
+                        backgroundImage: 'url("/pics/head/MALINA.webp")',
                         backgroundSize: "cover",
                         backgroundPositionY: "70%",
                       }}
+                      aria-label="Klasik waffle"
                     ></div>
                     <div className="pt-8 text-center flex flex-col">
-                      <div className="font-bold text-xl uppercase">Klasik</div>
+                      <h2 className="font-bold text-xl uppercase">Klasik</h2>
                     </div>
                   </div>
                 </SwiperSlide>
@@ -94,15 +97,16 @@ const Home: FunctionComponent = () => {
                     <div
                       className="rounded-full aspect-square h-40 hover:scale-110 hover:duration-300"
                       style={{
-                        backgroundImage: 'url("/pics/head/JEBKA.png")',
+                        backgroundImage: 'url("/pics/head/JEBKA.webp")',
                         backgroundSize: "cover",
                         backgroundPositionY: "70%",
                       }}
+                      aria-label="Waffle jablko skořice"
                     ></div>
                     <div className="py-8 text-center flex flex-col">
-                      <div className="font-bold text-xl uppercase">
+                      <p className="font-bold text-xl uppercase">
                         Jablko <br /> skořice
-                      </div>
+                      </p>
                     </div>
                   </div>
                 </SwiperSlide>
@@ -112,15 +116,16 @@ const Home: FunctionComponent = () => {
                     <div
                       className="rounded-full aspect-square h-40 hover:scale-110 hover:duration-300"
                       style={{
-                        backgroundImage: 'url("/pics/head/BANANA.png")',
+                        backgroundImage: 'url("/pics/head/BANANA.webp")',
                         backgroundSize: "cover",
                         backgroundPositionY: "70%",
                       }}
+                      aria-label="Waffle banana split"
                     ></div>
                     <div className="py-8 text-center flex flex-col">
-                      <div className="font-bold text-xl uppercase">
+                      <p className="font-bold text-xl uppercase">
                         Banana <br /> split
-                      </div>
+                      </p>
                     </div>
                   </div>
                 </SwiperSlide>
@@ -130,21 +135,20 @@ const Home: FunctionComponent = () => {
                     <div
                       className="rounded-full aspect-square h-40 hover:scale-110 hover:duration-300"
                       style={{
-                        backgroundImage: 'url("/pics/head/2326.png")',
+                        backgroundImage: 'url("/pics/head/2326.webp")',
                         backgroundSize: "contain",
                         backgroundPositionY: "50%",
                         backgroundRepeat: "no-repeat",
                       }}
+                      aria-label="Waffle namixuj si sám"
                     ></div>
                     <div className="py-8 text-center flex flex-col">
-                      <div className="font-bold text-xl uppercase">
+                      <p className="font-bold text-xl uppercase">
                         Namixuj <br /> si sám
-                      </div>
+                      </p>
                     </div>
                   </div>
                 </SwiperSlide>
-
-                {/* Add other SwiperSlide components here */}
               </Swiper>
             </div>
 
@@ -155,15 +159,16 @@ const Home: FunctionComponent = () => {
                     <div
                       className="rounded-full aspect-square h-40 hover:scale-110 hover:duration-300"
                       style={{
-                        backgroundImage: 'url("/pics/head/MALINA.png")',
+                        backgroundImage: 'url("/pics/head/MALINA.webp")',
                         backgroundSize: "cover",
                         backgroundPositionY: "70%",
                       }}
+                      aria-label="Klasik waffle"
                     ></div>
                     <div className="py-8 text-center flex flex-col">
-                      <div className="font-bold md:text-2xl lg:text-3xl uppercase pb-8">
+                      <p className="font-bold md:text-2xl lg:text-3xl uppercase pb-8">
                         Klasik
-                      </div>
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -173,15 +178,16 @@ const Home: FunctionComponent = () => {
                     <div
                       className="rounded-full aspect-square h-40 hover:scale-110 hover:duration-300"
                       style={{
-                        backgroundImage: 'url("/pics/head/JEBKA.png")',
+                        backgroundImage: 'url("/pics/head/JEBKA.webp")',
                         backgroundSize: "cover",
                         backgroundPositionY: "70%",
                       }}
+                      aria-label="Waffle jablko skořice"
                     ></div>
                     <div className="py-8 text-center flex flex-col">
-                      <div className="font-bold md:text-2xl lg:text-3xl uppercase">
+                      <p className="font-bold md:text-2xl lg:text-3xl uppercase">
                         jablko <br /> & skořice
-                      </div>
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -191,15 +197,16 @@ const Home: FunctionComponent = () => {
                     <div
                       className="rounded-full aspect-square h-40 hover:scale-110 hover:duration-300"
                       style={{
-                        backgroundImage: 'url("/pics/head/BANANA.png")',
+                        backgroundImage: 'url("/pics/head/BANANA.webp")',
                         backgroundSize: "cover",
                         backgroundPositionY: "70%",
                       }}
+                      aria-label="Waffle banana split"
                     ></div>
                     <div className="py-8 text-center flex flex-col">
-                      <div className="font-bold md:text-2xl lg:text-3xl uppercase">
+                      <p className="font-bold md:text-2xl lg:text-3xl uppercase">
                         banana <br /> split
-                      </div>
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -209,11 +216,12 @@ const Home: FunctionComponent = () => {
                     <div
                       className="rounded-full aspect-square h-40 hover:scale-110 hover:duration-300"
                       style={{
-                        backgroundImage: 'url("/pics/head/2326.png")',
+                        backgroundImage: 'url("/pics/head/2326.webp")',
                         backgroundSize: "contain",
                         backgroundPositionY: "50%",
                         backgroundRepeat: "no-repeat",
                       }}
+                      aria-label="Waffle namixuj si sám"
                     ></div>
                     <div className="py-8 text-center flex flex-col">
                       <div className="font-bold md:text-2xl lg:text-3xl uppercase">
@@ -229,12 +237,13 @@ const Home: FunctionComponent = () => {
               <div
                 className="aspect-square w-9/12 md:w-3/5 rounded-3xl flex items-center justify-center transition-transform duration-[700ms]"
                 style={{
-                  backgroundImage: 'url("/pics/products/6236.png")',
+                  backgroundImage: 'url("/pics/products/6236.webp")',
                   backgroundRepeat: "no-repeat",
                   backgroundSize: "cover",
                   backgroundPositionY: "50%",
                   transform: `rotate(${rotation}deg)`,
                 }}
+                aria-label="Waffle namixuj si sám, zatoč si kolem"
               >
                 <button
                   onClick={handleRotate}
@@ -247,23 +256,23 @@ const Home: FunctionComponent = () => {
             </div>
 
             <div className="grid md:grid-cols-2 gap-8 lg:gap-16 text-lg md:text-xl lg:text-2xl pt-8">
-              <div className="aspect-video md:w-full md:h-full rounded-3xl border-2 bg-[url('/pics/2662.png')] bg-cover bg-no-repeat grid text-right px-4 py-4 md:py-8 gap-2"></div>
+              <div className="aspect-video md:w-full md:h-full rounded-3xl border-2 bg-[url('/pics/2662.webp')] bg-cover bg-no-repeat grid text-right px-4 py-4 md:py-8 gap-2"></div>
               <div className="w-full rounded-3xl border-2 border-white grid text-right px-4 py-4 md:py-8 gap-2 items-center xl:text-3xl">
-                <div className="uppercase font-semibold lg:text-4xl xl:text-5xl">
+                <h3 className="uppercase font-semibold lg:text-4xl xl:text-5xl">
                   Kde nás najdete
-                </div>
+                </h3>
 
                 <div className="flex flex-col gap-4">
                   <div className="flex gap-2 items-center font-bold justify-end text-right">
                     <LocationIcon />
-                    <div>
+                    <p>
                       Harrachov 191 <br /> Harrachov
-                    </div>
+                    </p>
                   </div>
 
-                  <div>
+                  <p>
                     u sjezdovky <br /> pod Čertovou horou
-                  </div>
+                  </p>
                 </div>
               </div>
             </div>
@@ -281,18 +290,18 @@ const Home: FunctionComponent = () => {
               </div>
 
               <div className="w-full rounded-3xl border-2 border-white grid text-left px-4 py-4 md:py-8 gap-2 items-center xl:text-3xl">
-                <div className="uppercase font-semibold lg:text-4xl xl:text-5xl">
+                <h3 className="uppercase font-semibold lg:text-4xl xl:text-5xl">
                   Otevírací doba
-                </div>
+                </h3>
                 <div className="grid gap-2">
                   <div className="font-bold">
-                    <div>pondělí - neděle</div>
-                    <div>10:30 - 20:30</div>
+                    <p>pondělí - neděle</p>
+                    <p>10:30 - 20:30</p>
                   </div>
 
-                  <div>
+                  <p>
                     u sjezdovky <br /> pod Čertovou horou
-                  </div>
+                  </p>
                 </div>
               </div>
             </div>
@@ -305,6 +314,7 @@ const Home: FunctionComponent = () => {
                   href="https://www.facebook.com/bubble_waffle_harrachov"
                   className="hover:scale-110 hover:duration-300"
                   target="_blank"
+                  aria-hidden="true"
                 >
                   <FacebookIcon />
                 </a>
@@ -313,11 +323,12 @@ const Home: FunctionComponent = () => {
                   href="https://www.instagram.com/bubble_waffle_harrachov"
                   className="hover:scale-110 hover:duration-300"
                   target="_blank"
+                  aria-hidden="true"
                 >
                   <InstagramIcon />
                 </a>
               </div>
-              <div>waffle harrachov</div>
+              <p>waffle harrachov</p>
             </div>
           </div>
         </div>
