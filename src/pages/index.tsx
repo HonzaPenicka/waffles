@@ -13,26 +13,62 @@ import { FacebookIcon } from "../../public/icon/facebook";
 
 const Home: FunctionComponent = () => {
   const [rotation, setRotation] = useState<number>(0);
+  const [isKlasikOpen, setIsKlasikOpen] = useState(false);
+  const [isAppleOpen, setIsAppleOpen] = useState(false);
+  const [isBananaOpen, setIsBananaOpen] = useState(false);
+  const [isMixItOpen, setIsMixItOpen] = useState(false);
 
   const handleRotate = () => {
     setRotation((prevRotation) => prevRotation + 45);
+  };
+
+  const handleMouseKlasikEnter = () => {
+    setIsKlasikOpen(true);
+  };
+
+  const handleMouseKlasikLeave = () => {
+    setIsKlasikOpen(false);
+  };
+
+  const handleMouseAppleEnter = () => {
+    setIsAppleOpen(true);
+  };
+
+  const handleMouseAppleLeave = () => {
+    setIsAppleOpen(false);
+  };
+
+  const handleMouseBananaEnter = () => {
+    setIsBananaOpen(true);
+  };
+
+  const handleMouseBananaLeave = () => {
+    setIsBananaOpen(false);
+  };
+
+  const handleMouseMixItEnter = () => {
+    setIsMixItOpen(true);
+  };
+
+  const handleMouseMixItLeave = () => {
+    setIsMixItOpen(false);
   };
 
   return (
     <div className="flex flex-col h-auto w-screen justify-between bg-gradient-to-b from-pink-500 via-purple-500 to-indigo-500">
       <header className="h-8 lg:h-16 w-full top-0 grid"></header>
 
-      <main className="gap-8 container mx-auto border-4 rounded-3xl h-full w-full text-white">
+      <main className="gap-8 lg:gap-16 container mx-auto border-4 rounded-3xl h-full w-full text-white">
         <div className="p-4 grid gap-8 items-center">
-          <div className="grid gap-8">
-            <div className="flex flex-col gap-4 pt-4">
+          <div className="grid gap-4 md:gap-8 lg:gap-16">
+            <div className="flex flex-col gap-4 lg:gap-8 pt-4 lg:pt-8">
               <div className="flex items-center gap-4">
                 <div className="md:hidden flex hover:scale-110 hover:duration-300">
                   <WaffleIcon width="60px" height="60px" />
                 </div>
 
                 <div className="hidden md:flex lg:justify-self-start hover:scale-110 hover:duration-300">
-                  <WaffleIcon width="100px" height="100px" />
+                  <WaffleIcon width="120px" height="120px" />
                 </div>
               </div>
 
@@ -40,7 +76,7 @@ const Home: FunctionComponent = () => {
                 Nejlepší waffle <br />v Harrachově
               </h1>
 
-              <div className="justify-center flex items-center py-4">
+              <div className="justify-center flex items-center pt-4">
                 <div
                   className="aspect-video w-full md:w-3/5 rounded-3xl"
                   aria-label="Nejlepší waffle v Harrachově"
@@ -87,7 +123,29 @@ const Home: FunctionComponent = () => {
                       aria-label="Klasik waffle"
                     ></div>
                     <div className="pt-8 text-center flex flex-col">
-                      <h2 className="font-bold text-xl uppercase">Klasik</h2>
+                      <button
+                        className="font-bold text-xl uppercase"
+                        onMouseEnter={handleMouseKlasikEnter}
+                        onMouseLeave={handleMouseKlasikLeave}
+                      >
+                        Klasik
+                      </button>
+                      {isKlasikOpen && (
+                        <div
+                          className="absolute z-10 w-64 bg-white border border-gray-300 rounded-md shadow-lg p-2"
+                          onMouseEnter={handleMouseKlasikEnter}
+                          onMouseLeave={handleMouseKlasikLeave}
+                        >
+                          <p className="text-xs text-gray-700 flex flex-col text-left gap-1">
+                            <span>
+                              <b>Těsto</b>: Světlé / Kakaové / Bezlepkové
+                            </span>
+                            <span>
+                              <b>Ingredience</b>: Sirup, šlehačka
+                            </span>
+                          </p>
+                        </div>
+                      )}
                     </div>
                   </div>
                 </SwiperSlide>
@@ -104,9 +162,30 @@ const Home: FunctionComponent = () => {
                       aria-label="Waffle jablko skořice"
                     ></div>
                     <div className="py-8 text-center flex flex-col">
-                      <p className="font-bold text-xl uppercase">
+                      <button
+                        className="font-bold text-xl uppercase"
+                        onMouseEnter={handleMouseAppleEnter}
+                        onMouseLeave={handleMouseAppleLeave}
+                      >
                         Jablko <br /> skořice
-                      </p>
+                      </button>
+                      {isAppleOpen && (
+                        <div
+                          className="absolute z-10 w-64 bg-white border border-gray-300 rounded-md shadow-lg p-4"
+                          onMouseEnter={handleMouseAppleEnter}
+                          onMouseLeave={handleMouseAppleLeave}
+                        >
+                          <p className="text-xs text-gray-700 flex flex-col text-left gap-1">
+                            <span>
+                              <b>Těsto</b>: Světlé / Kakaové / Bezlepkové
+                            </span>
+                            <span>
+                              <b>Ingredience</b>: Jablko, skořice, sirup,
+                              šlehačka, křížaly
+                            </span>
+                          </p>
+                        </div>
+                      )}
                     </div>
                   </div>
                 </SwiperSlide>
@@ -123,9 +202,30 @@ const Home: FunctionComponent = () => {
                       aria-label="Waffle banana split"
                     ></div>
                     <div className="py-8 text-center flex flex-col">
-                      <p className="font-bold text-xl uppercase">
+                      <button
+                        className="font-bold text-xl uppercase"
+                        onMouseEnter={handleMouseBananaEnter}
+                        onMouseLeave={handleMouseBananaLeave}
+                      >
                         Banana <br /> split
-                      </p>
+                      </button>
+                      {isBananaOpen && (
+                        <div
+                          className="absolute z-10 w-64 bg-white border border-gray-300 rounded-md shadow-lg p-4"
+                          onMouseEnter={handleMouseBananaEnter}
+                          onMouseLeave={handleMouseBananaLeave}
+                        >
+                          <p className="text-xs text-gray-700 flex flex-col text-left gap-1">
+                            <span>
+                              <b>Těsto</b>: Světlé / Kakaové / Bezlepkové
+                            </span>
+                            <span>
+                              <b>Ingredience</b>: Banán, nutella, sirup,
+                              šlehačka, posyp
+                            </span>
+                          </p>
+                        </div>
+                      )}
                     </div>
                   </div>
                 </SwiperSlide>
@@ -143,9 +243,30 @@ const Home: FunctionComponent = () => {
                       aria-label="Waffle namixuj si sám"
                     ></div>
                     <div className="py-8 text-center flex flex-col">
-                      <p className="font-bold text-xl uppercase">
+                      <button
+                        className="font-bold text-xl uppercase"
+                        onMouseEnter={handleMouseMixItEnter}
+                        onMouseLeave={handleMouseMixItLeave}
+                      >
                         Namixuj <br /> si sám
-                      </p>
+                      </button>
+                      {isMixItOpen && (
+                        <div
+                          className="absolute z-10 w-64 bg-white border border-gray-300 rounded-md shadow-lg p-4"
+                          onMouseEnter={handleMouseMixItEnter}
+                          onMouseLeave={handleMouseMixItLeave}
+                        >
+                          <p className="text-xs text-gray-700 flex flex-col text-left gap-1">
+                            <span>
+                              <b>Těsto</b>: Světlé / Kakaové / Bezlepkové
+                            </span>
+                            <span>
+                              <b>Ingredience</b>: Vytvoř si svoji wafli dle
+                              výběru
+                            </span>
+                          </p>
+                        </div>
+                      )}
                     </div>
                   </div>
                 </SwiperSlide>
@@ -166,9 +287,29 @@ const Home: FunctionComponent = () => {
                       aria-label="Klasik waffle"
                     ></div>
                     <div className="py-8 text-center flex flex-col">
-                      <p className="font-bold md:text-2xl lg:text-3xl uppercase pb-8">
+                      <button
+                        className="font-bold md:text-2xl lg:text-3xl uppercase pb-8"
+                        onMouseEnter={handleMouseKlasikEnter}
+                        onMouseLeave={handleMouseKlasikLeave}
+                      >
                         Klasik
-                      </p>
+                      </button>
+                      {isKlasikOpen && (
+                        <div
+                          className="absolute z-10 w-64 mt-2 bg-white border border-gray-300 rounded-md shadow-lg p-4"
+                          onMouseEnter={handleMouseKlasikEnter}
+                          onMouseLeave={handleMouseKlasikLeave}
+                        >
+                          <p className="text-xs md:text-sm lg:text-lg text-gray-700 flex flex-col text-left md:gap-2 lg:gap-4">
+                            <span>
+                              <b>Těsto</b>: Světlé / Kakaové / Bezlepkové
+                            </span>
+                            <span>
+                              <b>Ingredience</b>: Sirup, šlehačka
+                            </span>
+                          </p>
+                        </div>
+                      )}
                     </div>
                   </div>
                 </div>
@@ -185,9 +326,30 @@ const Home: FunctionComponent = () => {
                       aria-label="Waffle jablko skořice"
                     ></div>
                     <div className="py-8 text-center flex flex-col">
-                      <p className="font-bold md:text-2xl lg:text-3xl uppercase">
+                      <button
+                        className="font-bold md:text-2xl lg:text-3xl uppercase"
+                        onMouseEnter={handleMouseAppleEnter}
+                        onMouseLeave={handleMouseAppleLeave}
+                      >
                         jablko <br /> & skořice
-                      </p>
+                      </button>
+                      {isAppleOpen && (
+                        <div
+                          className="absolute z-10 w-64 mt-2 bg-white border border-gray-300 rounded-md shadow-lg p-4"
+                          onMouseEnter={handleMouseAppleEnter}
+                          onMouseLeave={handleMouseAppleLeave}
+                        >
+                          <p className="text-xs md:text-sm lg:text-lg text-gray-700 flex flex-col text-left md:gap-2 lg:gap-4">
+                            <span>
+                              <b>Těsto</b>: Světlé / Kakaové / Bezlepkové
+                            </span>
+                            <span>
+                              <b>Ingredience</b>: Jablko, skořice, sirup,
+                              šlehačka, křížaly
+                            </span>
+                          </p>
+                        </div>
+                      )}
                     </div>
                   </div>
                 </div>
@@ -204,9 +366,30 @@ const Home: FunctionComponent = () => {
                       aria-label="Waffle banana split"
                     ></div>
                     <div className="py-8 text-center flex flex-col">
-                      <p className="font-bold md:text-2xl lg:text-3xl uppercase">
+                      <button
+                        className="font-bold md:text-2xl lg:text-3xl uppercase"
+                        onMouseEnter={handleMouseBananaEnter}
+                        onMouseLeave={handleMouseBananaLeave}
+                      >
                         banana <br /> split
-                      </p>
+                      </button>
+                      {isBananaOpen && (
+                        <div
+                          className="absolute z-10 w-64 mt-2 bg-white border border-gray-300 rounded-md shadow-lg p-4"
+                          onMouseEnter={handleMouseBananaEnter}
+                          onMouseLeave={handleMouseBananaLeave}
+                        >
+                          <p className="text-xs md:text-sm lg:text-lg text-gray-700 flex flex-col text-left md:gap-2 lg:gap-4">
+                            <span>
+                              <b>Těsto</b>: Světlé / Kakaové / Bezlepkové
+                            </span>
+                            <span>
+                              <b>Ingredience</b>: Banán, nutella, sirup,
+                              šlehačka, posyp
+                            </span>
+                          </p>
+                        </div>
+                      )}
                     </div>
                   </div>
                 </div>
@@ -224,9 +407,30 @@ const Home: FunctionComponent = () => {
                       aria-label="Waffle namixuj si sám"
                     ></div>
                     <div className="py-8 text-center flex flex-col">
-                      <div className="font-bold md:text-2xl lg:text-3xl uppercase">
+                      <button
+                        className="font-bold md:text-2xl lg:text-3xl uppercase"
+                        onMouseEnter={handleMouseMixItEnter}
+                        onMouseLeave={handleMouseMixItLeave}
+                      >
                         namixuj <br /> si sám
-                      </div>
+                      </button>
+                      {isMixItOpen && (
+                        <div
+                          className="absolute z-10 w-64 mt-2 bg-white border border-gray-300 rounded-md shadow-lg p-4"
+                          onMouseEnter={handleMouseMixItEnter}
+                          onMouseLeave={handleMouseMixItLeave}
+                        >
+                          <p className="text-xs md:text-sm lg:text-lg text-gray-700 flex flex-col text-left md:gap-2 lg:gap-4">
+                            <span>
+                              <b>Těsto</b>: Světlé / Kakaové / Bezlepkové
+                            </span>
+                            <span>
+                              <b>Ingredience</b>: Vytvoř si svoji wafli dle
+                              výběru
+                            </span>
+                          </p>
+                        </div>
+                      )}
                     </div>
                   </div>
                 </div>
@@ -278,7 +482,7 @@ const Home: FunctionComponent = () => {
             </div>
 
             <div className="grid md:grid-cols-2 gap-8 lg:gap-16 text-lg md:text-xl lg:text-2xl">
-              <div className="md:order-last aspect-video md:h-full">
+              <div className="md:order-last aspect-video md:aspect-auto lg:aspect-video md:h-full">
                 <iframe
                   className="rounded-3xl"
                   width="100%"
