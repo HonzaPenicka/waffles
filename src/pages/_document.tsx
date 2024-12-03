@@ -1,9 +1,11 @@
 import { Html, Head, Main, NextScript } from "next/document";
+import { Analytics } from "@vercel/analytics/react";
 
 export default function Document() {
   return (
     <Html lang="en">
       <Head>
+        <Analytics />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link
           rel="preconnect"
