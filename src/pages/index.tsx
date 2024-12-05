@@ -78,7 +78,7 @@ const Home: FunctionComponent = () => {
 
               <div className="justify-center flex items-center pt-4">
                 <div
-                  className="aspect-video w-full md:w-3/5 rounded-3xl"
+                  className="aspect-video w-4/5 md:w-2/5 rounded-3xl"
                   aria-label="Nejlepší waffle v Harrachově"
                   role="img"
                   style={{
@@ -439,7 +439,7 @@ const Home: FunctionComponent = () => {
 
             <div className="justify-center flex items-center">
               <div
-                className="aspect-square w-9/12 md:w-3/5 rounded-3xl flex items-center justify-center transition-transform duration-[700ms]"
+                className="aspect-square w-9/12 md:w-5/12 rounded-3xl flex items-center justify-center transition-transform duration-[700ms]"
                 style={{
                   backgroundImage: 'url("/pics/products/6236.webp")',
                   backgroundRepeat: "no-repeat",
@@ -461,8 +461,8 @@ const Home: FunctionComponent = () => {
 
             <div className="grid md:grid-cols-2 gap-8 lg:gap-16 text-lg md:text-xl lg:text-2xl pt-8">
               <div className="aspect-video md:w-full md:h-full rounded-3xl border-2 bg-[url('/pics/2662.webp')] bg-cover bg-no-repeat grid text-right px-4 py-4 md:py-8 gap-2"></div>
-              <div className="w-full rounded-3xl border-2 border-white grid text-right px-4 py-4 md:py-8 gap-2 items-center xl:text-3xl">
-                <h3 className="uppercase font-semibold lg:text-4xl xl:text-5xl">
+              <div className="w-full rounded-3xl border-2 border-white grid text-right px-4 py-4 md:py-8 gap-2 items-center xl:text-2xl">
+                <h3 className="uppercase font-semibold lg:text-4xl xl:text-4xl">
                   Kde nás najdete
                 </h3>
 
@@ -493,8 +493,8 @@ const Home: FunctionComponent = () => {
                 ></iframe>
               </div>
 
-              <div className="w-full rounded-3xl border-2 border-white grid text-left px-4 py-4 md:py-8 gap-2 items-center xl:text-3xl">
-                <h3 className="uppercase font-semibold lg:text-4xl xl:text-5xl">
+              <div className="w-full rounded-3xl border-2 border-white grid text-left px-4 py-4 md:py-8 gap-2 items-center xl:text-2xl">
+                <h3 className="uppercase font-semibold lg:text-4xl xl:text-4xl">
                   Otevírací doba
                 </h3>
                 <div className="grid gap-2">
