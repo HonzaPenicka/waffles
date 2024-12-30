@@ -61,7 +61,7 @@ const Home: FunctionComponent = () => {
       <main className="gap-8 lg:gap-16 container mx-auto border-4 rounded-3xl h-full w-full text-white">
         <div className="p-4 grid gap-8 items-center">
           <div className="grid gap-4 md:gap-8 lg:gap-16">
-            <div className="flex flex-col gap-4 lg:gap-8 pt-4 lg:pt-8">
+            <div className="flex flex-col pt-4 lg:pt-8">
               <div className="flex items-center gap-4">
                 <div className="md:hidden flex hover:scale-110 hover:duration-300">
                   <WaffleIcon width="60px" height="60px" />
@@ -78,7 +78,7 @@ const Home: FunctionComponent = () => {
 
               <div className="justify-center flex items-center pt-4">
                 <div
-                  className="aspect-video w-4/5 md:w-2/5 rounded-3xl"
+                  className="aspect-square w-full md:w-3/5 lg:w-2/5 rounded-3xl"
                   aria-label="Nejlepší waffle v Harrachově"
                   role="img"
                   style={{
@@ -114,11 +114,12 @@ const Home: FunctionComponent = () => {
                 <SwiperSlide className="w-full flex flex-col">
                   <div className="text-sm items-center justify-center grid">
                     <div
-                      className="rounded-full aspect-square h-40 hover:scale-110 hover:duration-300"
+                      className="rounded-full aspect-square h-60"
                       style={{
                         backgroundImage: 'url("/pics/head/MALINA.webp")',
-                        backgroundSize: "cover",
-                        backgroundPositionY: "70%",
+                        backgroundSize: "contain",
+                        backgroundRepeat: "no-repeat",
+                        backgroundPositionX: "50%",
                       }}
                       aria-label="Klasik waffle"
                     ></div>
@@ -153,11 +154,12 @@ const Home: FunctionComponent = () => {
                 <SwiperSlide className="w-full flex flex-col">
                   <div className="text-sm items-center justify-center grid">
                     <div
-                      className="rounded-full aspect-square h-40 hover:scale-110 hover:duration-300"
+                      className="rounded-full aspect-square h-60"
                       style={{
                         backgroundImage: 'url("/pics/head/JEBKA.webp")',
-                        backgroundSize: "cover",
-                        backgroundPositionY: "70%",
+                        backgroundSize: "contain",
+                        backgroundRepeat: "no-repeat",
+                        backgroundPositionX: "50%",
                       }}
                       aria-label="Waffle jablko skořice"
                     ></div>
@@ -193,11 +195,12 @@ const Home: FunctionComponent = () => {
                 <SwiperSlide className="w-full flex flex-col">
                   <div className="text-sm items-center justify-center grid">
                     <div
-                      className="rounded-full aspect-square h-40 hover:scale-110 hover:duration-300"
+                      className="rounded-full aspect-square h-60"
                       style={{
                         backgroundImage: 'url("/pics/head/BANANA.webp")',
-                        backgroundSize: "cover",
-                        backgroundPositionY: "70%",
+                        backgroundSize: "contain",
+                        backgroundRepeat: "no-repeat",
+                        backgroundPositionX: "50%",
                       }}
                       aria-label="Waffle banana split"
                     ></div>
@@ -233,12 +236,12 @@ const Home: FunctionComponent = () => {
                 <SwiperSlide className="w-full flex flex-col">
                   <div className="text-sm items-center justify-center grid">
                     <div
-                      className="rounded-full aspect-square h-40 hover:scale-110 hover:duration-300"
+                      className="rounded-full aspect-square h-60"
                       style={{
-                        backgroundImage: 'url("/pics/head/2326.webp")',
+                        backgroundImage: 'url("/pics/head/OREO.webp")',
                         backgroundSize: "contain",
-                        backgroundPositionY: "50%",
                         backgroundRepeat: "no-repeat",
+                        backgroundPositionX: "50%",
                       }}
                       aria-label="Waffle namixuj si sám"
                     ></div>
@@ -278,11 +281,12 @@ const Home: FunctionComponent = () => {
                 <div className="w-full flex flex-col">
                   <div className="text-sm items-center justify-center grid">
                     <div
-                      className="rounded-full aspect-square h-40 hover:scale-110 hover:duration-300"
+                      className="rounded-full aspect-square h-40 md:h-52 lg:h-60 hover:scale-110 hover:duration-300"
                       style={{
                         backgroundImage: 'url("/pics/head/MALINA.webp")',
-                        backgroundSize: "cover",
-                        backgroundPositionY: "70%",
+                        backgroundSize: "contain",
+                        backgroundRepeat: "no-repeat",
+                        backgroundPositionX: "50%",
                       }}
                       aria-label="Klasik waffle"
                     ></div>
@@ -317,11 +321,12 @@ const Home: FunctionComponent = () => {
                 <div className="w-full flex flex-col">
                   <div className="text-sm items-center justify-center grid">
                     <div
-                      className="rounded-full aspect-square h-40 hover:scale-110 hover:duration-300"
+                      className="rounded-full aspect-square h-40 md:h-52 lg:h-60 hover:scale-110 hover:duration-300"
                       style={{
                         backgroundImage: 'url("/pics/head/JEBKA.webp")',
-                        backgroundSize: "cover",
-                        backgroundPositionY: "70%",
+                        backgroundSize: "contain",
+                        backgroundRepeat: "no-repeat",
+                        backgroundPositionX: "50%",
                       }}
                       aria-label="Waffle jablko skořice"
                     ></div>
@@ -357,11 +362,12 @@ const Home: FunctionComponent = () => {
                 <div className="w-full flex flex-col">
                   <div className="text-sm items-center justify-center grid">
                     <div
-                      className="rounded-full aspect-square h-40 hover:scale-110 hover:duration-300"
+                      className="rounded-full aspect-square h-40 md:h-52 lg:h-60 hover:scale-110 hover:duration-300"
                       style={{
                         backgroundImage: 'url("/pics/head/BANANA.webp")',
-                        backgroundSize: "cover",
-                        backgroundPositionY: "70%",
+                        backgroundSize: "contain",
+                        backgroundRepeat: "no-repeat",
+                        backgroundPositionX: "50%",
                       }}
                       aria-label="Waffle banana split"
                     ></div>
@@ -397,12 +403,12 @@ const Home: FunctionComponent = () => {
                 <div className="w-full flex flex-col">
                   <div className="text-sm items-center justify-center grid">
                     <div
-                      className="rounded-full aspect-square h-40 hover:scale-110 hover:duration-300"
+                      className="rounded-full aspect-square h-40 md:h-52 lg:h-60 hover:scale-110 hover:duration-300"
                       style={{
-                        backgroundImage: 'url("/pics/head/2326.webp")',
+                        backgroundImage: 'url("/pics/head/OREO.webp")',
                         backgroundSize: "contain",
-                        backgroundPositionY: "50%",
                         backgroundRepeat: "no-repeat",
+                        backgroundPositionX: "50%",
                       }}
                       aria-label="Waffle namixuj si sám"
                     ></div>
