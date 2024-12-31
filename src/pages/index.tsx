@@ -63,26 +63,27 @@ const Home: FunctionComponent = () => {
           <div className="grid gap-4 md:gap-8 lg:gap-16">
             <div className="flex flex-col pt-4 lg:pt-8">
               <div className="flex items-center gap-4">
-                <div className="md:hidden flex hover:scale-110 hover:duration-300">
-                  <WaffleIcon width="60px" height="60px" />
-                </div>
-
-                <div className="hidden md:flex lg:justify-self-start hover:scale-110 hover:duration-300">
-                  <WaffleIcon width="120px" height="120px" />
+                <div className="flex hover:scale-110 hover:duration-300 lg:pl-12">
+                  <img
+                    src="/pics/head/logo-min.webp"
+                    alt="logo"
+                    className="w-16 md:w-32 lg:w-40"
+                  />
                 </div>
               </div>
 
-              <h1 className="text-3xl md:text-6xl text-center font-semibold uppercase">
-                Nejlepší waffle <br />v Harrachově
+              <h1 className="text-3xl md:text-6xl text-center font-semibold uppercase pt-2 lg:pt-0">
+                Bubble waffle <br />
+                Harrachov
               </h1>
 
               <div className="justify-center flex items-center pt-4">
                 <div
-                  className="aspect-square w-full md:w-3/5 lg:w-2/5 rounded-3xl"
+                  className="aspect-square w-full md:w-3/5 rounded-3xl"
                   aria-label="Nejlepší waffle v Harrachově"
                   role="img"
                   style={{
-                    backgroundImage: 'url("/pics/head/2326.webp")',
+                    backgroundImage: 'url("/pics/head/big-min.webp")',
                     backgroundRepeat: "no-repeat",
                     backgroundSize: "contain",
                     backgroundPositionY: "50%",
@@ -92,12 +93,9 @@ const Home: FunctionComponent = () => {
               </div>
 
               <div className="aspect-auto lg:aspect-auto lg:h-full">
-                <p className="p-4 h-full w-auto rounded-3xl text-center text-lg md:text-xl lg:text-2xl">
-                  Rodinný stánek v srdci malebného Harrachova.{" "}
-                  <br className="hidden md:flex" />
-                  Naše vášeň je v používání prvotřídních surovin{" "}
-                  <br className="hidden md:flex" />a vytváření nezapomenutelných
-                  sladkých zážitků.
+                <p className="p-4 h-full w-auto rounded-3xl text-lg md:text-xl lg:text-2xl text-ellipsis text-center">
+                  Naše bubble wafle jsou dokonalým spojením křehkého těsta a
+                  pestrých sladkých i ovocných kombinací.
                 </p>
               </div>
             </div>
@@ -116,7 +114,7 @@ const Home: FunctionComponent = () => {
                     <div
                       className="rounded-full aspect-square h-60"
                       style={{
-                        backgroundImage: 'url("/pics/head/MALINA.webp")',
+                        backgroundImage: 'url("/pics/head/lentils-min.webp")',
                         backgroundSize: "contain",
                         backgroundRepeat: "no-repeat",
                         backgroundPositionX: "50%",
@@ -156,7 +154,7 @@ const Home: FunctionComponent = () => {
                     <div
                       className="rounded-full aspect-square h-60"
                       style={{
-                        backgroundImage: 'url("/pics/head/JEBKA.webp")',
+                        backgroundImage: 'url("/pics/head/bears-min.webp")',
                         backgroundSize: "contain",
                         backgroundRepeat: "no-repeat",
                         backgroundPositionX: "50%",
@@ -183,7 +181,7 @@ const Home: FunctionComponent = () => {
                             </span>
                             <span>
                               <b>Ingredience</b>: Jablko, skořice, sirup,
-                              šlehačka, křížaly
+                              šlehačka, gumoví medvídci
                             </span>
                           </p>
                         </div>
@@ -197,12 +195,13 @@ const Home: FunctionComponent = () => {
                     <div
                       className="rounded-full aspect-square h-60"
                       style={{
-                        backgroundImage: 'url("/pics/head/BANANA.webp")',
+                        backgroundImage:
+                          'url("/pics/head/strawberry-min.webp")',
                         backgroundSize: "contain",
                         backgroundRepeat: "no-repeat",
                         backgroundPositionX: "50%",
                       }}
-                      aria-label="Waffle banana split"
+                      aria-label="Waffle strawberry split"
                     ></div>
                     <div className="py-8 text-center flex flex-col">
                       <button
@@ -210,7 +209,7 @@ const Home: FunctionComponent = () => {
                         onMouseEnter={handleMouseBananaEnter}
                         onMouseLeave={handleMouseBananaLeave}
                       >
-                        Banana <br /> split
+                        strawberry <br /> split
                       </button>
                       {isBananaOpen && (
                         <div
@@ -223,7 +222,7 @@ const Home: FunctionComponent = () => {
                               <b>Těsto</b>: Světlé / Kakaové / Bezlepkové
                             </span>
                             <span>
-                              <b>Ingredience</b>: Banán, nutella, sirup,
+                              <b>Ingredience</b>: Jahody, nutella, sirup,
                               šlehačka, posyp
                             </span>
                           </p>
@@ -238,7 +237,7 @@ const Home: FunctionComponent = () => {
                     <div
                       className="rounded-full aspect-square h-60"
                       style={{
-                        backgroundImage: 'url("/pics/head/OREO.webp")',
+                        backgroundImage: 'url("/pics/head/oreo-min.webp")',
                         backgroundSize: "contain",
                         backgroundRepeat: "no-repeat",
                         backgroundPositionX: "50%",
@@ -283,7 +282,7 @@ const Home: FunctionComponent = () => {
                     <div
                       className="rounded-full aspect-square h-40 md:h-52 lg:h-60 hover:scale-110 hover:duration-300"
                       style={{
-                        backgroundImage: 'url("/pics/head/MALINA.webp")',
+                        backgroundImage: 'url("/pics/head/lentils-min.webp")',
                         backgroundSize: "contain",
                         backgroundRepeat: "no-repeat",
                         backgroundPositionX: "50%",
@@ -323,7 +322,7 @@ const Home: FunctionComponent = () => {
                     <div
                       className="rounded-full aspect-square h-40 md:h-52 lg:h-60 hover:scale-110 hover:duration-300"
                       style={{
-                        backgroundImage: 'url("/pics/head/JEBKA.webp")',
+                        backgroundImage: 'url("/pics/head/bears-min.webp")',
                         backgroundSize: "contain",
                         backgroundRepeat: "no-repeat",
                         backgroundPositionX: "50%",
@@ -350,7 +349,7 @@ const Home: FunctionComponent = () => {
                             </span>
                             <span>
                               <b>Ingredience</b>: Jablko, skořice, sirup,
-                              šlehačka, křížaly
+                              šlehačka, gumídci
                             </span>
                           </p>
                         </div>
@@ -364,12 +363,13 @@ const Home: FunctionComponent = () => {
                     <div
                       className="rounded-full aspect-square h-40 md:h-52 lg:h-60 hover:scale-110 hover:duration-300"
                       style={{
-                        backgroundImage: 'url("/pics/head/BANANA.webp")',
+                        backgroundImage:
+                          'url("/pics/head/strawberry-min.webp")',
                         backgroundSize: "contain",
                         backgroundRepeat: "no-repeat",
                         backgroundPositionX: "50%",
                       }}
-                      aria-label="Waffle banana split"
+                      aria-label="Waffle strawberry split"
                     ></div>
                     <div className="py-8 text-center flex flex-col">
                       <button
@@ -377,7 +377,7 @@ const Home: FunctionComponent = () => {
                         onMouseEnter={handleMouseBananaEnter}
                         onMouseLeave={handleMouseBananaLeave}
                       >
-                        banana <br /> split
+                        strawberry <br /> split
                       </button>
                       {isBananaOpen && (
                         <div
@@ -390,7 +390,7 @@ const Home: FunctionComponent = () => {
                               <b>Těsto</b>: Světlé / Kakaové / Bezlepkové
                             </span>
                             <span>
-                              <b>Ingredience</b>: Banán, nutella, sirup,
+                              <b>Ingredience</b>: Jahody, nutella, sirup,
                               šlehačka, posyp
                             </span>
                           </p>
@@ -405,7 +405,7 @@ const Home: FunctionComponent = () => {
                     <div
                       className="rounded-full aspect-square h-40 md:h-52 lg:h-60 hover:scale-110 hover:duration-300"
                       style={{
-                        backgroundImage: 'url("/pics/head/OREO.webp")',
+                        backgroundImage: 'url("/pics/head/oreo-min.webp")',
                         backgroundSize: "contain",
                         backgroundRepeat: "no-repeat",
                         backgroundPositionX: "50%",
